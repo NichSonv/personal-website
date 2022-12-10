@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {{ partial "head.html" . }}
+        {{ block "css-link" . }}
+            <link rel="stylesheet" href="/css/lpstyle.css">
+        {{ end }}
+        {{ block "Tracking" . }}{{ end }}
+        {{ block "style" . }}{{ end }}
+    </head>
+
+    <body>
+        {{ partial "tagBody.html" . }}
+        {{ block "body" . }}{{ end }}
+    </body>
+
+</html>

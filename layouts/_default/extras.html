@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {{ partial "head.html" . }}
+        <link rel="stylesheet" href="/css/style.css">
+        <style>
+            html {
+                background-color: #12042a;
+                background-image: none;
+            }
+            body {
+                background-image: linear-gradient(to top right, #2f0f67, #2f0748);
+                color: #cbacff;
+                border-radius: 0%;
+                line-height: 1.3em;
+            }
+            dt {
+                margin: 1rem auto 0.5rem auto;
+                padding: 0.3rem;
+                width: 100%;
+                font-size: 1.2em;
+                border: 2px outset #cbacff;
+                border-radius: 15px;
+            }
+            dd {margin: auto;}
+            a {color: #ff8900;}
+            @media only screen and (min-width: 800px) {
+                body {
+                    margin: 8rem auto;
+                    width: 70%;
+                    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.3), -1px 3px 10px #cbacff;
+                    border-radius: 15px;
+                }
+                dt {width: fit-content;}
+                dd {
+                    width: 60%;
+                    margin: auto;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="row">
+            <!--<div class="col-3">
+            </div>-->
+            <div class="col-12">
+                <main>
+                    {{ .Content }}
+                </main>
+            </div>
+        </div>
+    </body>
+</html>

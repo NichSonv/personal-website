@@ -1,0 +1,9 @@
+baseURL = "https://som-vezzo.me/"
+languageCode = "pt-br"
+title = "Som-Vezzo"
+
+[markup.goldmark.renderer]
+    unsafe = true
+
+[permalinks]
+    blog = "/blog/:year/:month/:day/:title/"

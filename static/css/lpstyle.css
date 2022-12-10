@@ -1,0 +1,333 @@
+/* General -> Specific */
+:root {
+  --color: #cbacff;
+  --color2: #ffd5a4;
+  --color3: #ff8900;
+  --color4: #0cb0ff;
+  --color5: #89ff00;
+  --buttonColor: #eb7e02;
+  --buttonBorder: #ffbd70;
+  --whatsColor: #73d501;
+  --whatsBorder: #bdff70;
+  --backColor1: #0c031c;
+  --backColor2: #1f0748;
+  --bodyColor: #0000;
+  --thruColor: #0006;
+  --borderRound: 15px;
+}
+* {box-sizing: border-box;}
+/* MOBILE */
+/* Big parents */
+html {
+  background: linear-gradient(to bottom left, var(--backColor1), var(--backColor2)) fixed;
+  height: 100%;
+  padding: 0;
+  overflow-x: hidden;
+}
+body {
+  background-color: var(--bodyColor);
+  border-radius: var(--borderRound);
+  color: whitesmoke;
+  margin: 0;
+  text-align: left;
+  font-family: 'Jura', 'Comfortaa', Verdana, Tahoma, Helvetica, Arial, sans-serif;
+  line-height: 1.6em;
+}
+[class*="col-"] {
+  float: left;
+  width: 100%;
+  padding: 0.5rem 1.5rem;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.alternate {
+  background-color: var(--thruColor);
+  margin: 0;
+  overflow-x: hidden;
+}
+/* Body elements */
+footer {
+  text-align: center;
+}
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+footer a {
+  text-decoration: none;
+  color: var(--color);
+}
+footer a:hover {
+  color: var(--color2);
+}
+h1 {
+  margin: 420px auto 1.2rem auto;
+  font-size: 1.6em;
+  line-height: 1.4em;
+  color: var(--color3);
+  text-align: center;
+}
+.vvv h2 {
+  font-size: 1.1em;
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: whitesmoke;
+}
+.vvv h3 {
+  text-align: center;
+  font-size: 1em;
+  font-weight: 400;
+  margin: 1rem auto 2rem auto;
+  color: var(--color4);
+}
+h2 {
+  width: 100%;
+  line-height: 1.3em;
+  font-size: 1.6em;
+  color: var(--color4);
+  text-align: center;
+}
+h4 {
+  margin: 0 auto 0.5rem auto;
+  text-decoration: underline;
+  font-size: 1.1em;
+}
+hr {
+  margin: 1rem;
+  border: 3px dashed var(--color);
+  border-radius: var(--borderRound);
+}
+p {
+  overflow: auto;
+  margin: 1.7rem auto;
+  width: fit-content;
+  max-width: 1200px;
+  padding: 0.2rem;
+  font-size: 1.1em;
+  line-height: 1.6em;
+}
+em {
+  color: var(--color4);
+}
+strong {
+  color: var(--color3);
+  font-weight: 700;
+}
+.teacher p {
+  text-align: center;
+  max-width: 650px;
+}
+.vvv ul {
+  width: fit-content;  
+  font-size: 1em;
+  max-width: 1000px;
+  line-height: 1.4em;
+}
+.vvv li {
+  list-style: none;
+  text-align: center;
+  list-style-position: inside;
+  margin: 1.3rem auto 1.3rem -2.5rem;
+  padding: 1rem 1.4rem;
+  border: solid 2px var(--color4);
+  border-radius: var(--borderRound);
+}
+button {
+  margin: 1rem auto;
+  width: fit-content;
+  font-size: 1.3em;
+  font-weight: bold;
+  border: 3px outset var(--buttonBorder);
+  border-top-width: 1px;
+  border-bottom-width: 4px;
+  border-radius: var(--borderRound);
+  font-family: inherit;
+  color: white;
+  background-color: var(--buttonColor);
+  padding: 0.8rem 0.4rem;
+  text-transform: uppercase;
+  box-shadow: 0 0 15px 1px var(--buttonBorder);
+}
+.whatsbt {
+  text-align: center;
+}
+.whatsbt button {
+  background-color: var(--whatsColor);
+  border-color: var(--whatsBorder);
+  box-shadow: 0 0 15px 1px var(--color5);
+}
+.whatsbt button:hover {
+  background-color: var(--whatsBorder);
+  border-color: var(--whatsColor);
+  color: var(--whatsColor);
+}
+button:hover {
+  background-color: var(--buttonBorder);
+  color: var(--buttonColor);
+  border-color: var(--buttonColor);
+}
+ul {
+  list-style-position: outside;
+  width: 100%;
+  margin: -1rem auto 1rem auto;
+  line-height: 1.9em;
+}
+.lpcta ul {
+  list-style-type: circle; 
+  list-style-position: inside; 
+  margin: 1rem auto 1rem -1.5rem;
+  font-size: 0.98em;
+  line-height: 1.7em;
+  width: 100%;
+  text-align: center;
+}
+.lpcta p {
+  line-height: 1.5em;
+  margin: 1rem auto 0 auto;
+  text-align: center;
+}
+.ctaButton {
+  text-align: center;
+}
+.ctaButton span {
+  font-size: 2.2em;
+  opacity: 25%;
+  margin: -1rem auto 1rem auto;
+}
+.lpcta strong {
+  font-size: 2.6em; 
+  line-height: 1.3em;
+  color: var(--color2);
+}
+.vvv div {
+  margin: 1rem auto 1.5rem auto;
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+iframe {
+  border-radius: 30px;
+  margin: auto;
+}
+.vvv div, iframe {
+  max-width: 620px;
+  max-height: 400px;
+}
+img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--borderRound);
+}
+.teacher img {
+  max-width: 300px;
+}
+.cover {
+  opacity: 60%;
+  position: absolute;
+  right: -30px;
+  overflow: hidden;
+  overflow-x: hidden;
+  max-width: 500px;
+}
+.rfm {
+  position: absolute;
+  top: 250px;
+  left: 0;
+  max-width: 700px;
+}
+.quemeh {
+  text-align: left;
+  width: 100%;
+}
+.quem ul, .quem p {
+  max-width: fit-content;
+}
+.paleativo li {
+  max-width: 700px;
+  margin: 1rem auto;
+}
+.method li {
+  max-width: 1100px;
+  margin: auto;
+}
+.method strong {
+  text-decoration: underline;
+}
+.method img {
+  width: 100%;
+  margin: 1rem auto 1rem ;
+  max-width: 800px;
+}
+.method p {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* TABLETS */
+@media only screen and (min-width: 500px) {
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+  h1 {
+    margin-top: 570px;
+  }
+  h2 {
+    width: 70%;
+    margin: 1.3rem auto;
+  }
+  .cover {
+    right: 5vw;
+  }
+  .rfm {
+    left: 3vw;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 800px) {
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  .vvv div {
+    padding-bottom: 30%;
+  }
+  .cover {
+    right: 20vw;
+  }
+  .rfm {
+    left: 25%;
+  }
+  .teacher img {
+    float: left;
+    margin-right: 1rem;
+  }
+  .teacher p {
+    text-align: left;
+  }
+}
+/* For precaution */
+@media only screen and (max-width: 200px) {
+  body {word-break: break-all;}
+  }

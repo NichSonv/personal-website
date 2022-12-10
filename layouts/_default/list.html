@@ -1,0 +1,18 @@
+{{ define "main" }}
+    <div class="row">
+        <div class="col-12">
+            <main>
+                {{ .Content }}
+            </main>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <ol>
+                {{ range .Pages }}
+                <li><a href="{{ .Permalink }}">{{ .Params.date_short }} - {{ .Title }}</a></li>
+                {{ end }}
+            </ol>
+        </div>
+    </div>
+{{ end }}

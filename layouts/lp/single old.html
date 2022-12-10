@@ -1,0 +1,110 @@
+{{ define "body" }}
+    {{ $count := 0 }}<!--counter for automation-->
+    {{ $content_parts := split .Content "||||||" }}<!--var to organize .md content-->
+    
+    <!--Promessa e VVV-->
+    <div class="row alternate">
+        <div class="col-12">
+            {{ index $content_parts $count | safe.HTML }}
+            {{ $count := add $count 1 }}
+        </div>
+    </div>
+
+    <!--Botão checkout-->
+    <div class="row">
+        <div class="col-12 lpcta">
+            {{ index $content_parts $count | safe.HTML }}
+            {{ $count := add $count 1 }}<br>
+            <a href="{{ .Params.buttonURL }}"><button>{{ .Params.buttonTXT }}</button></a><br>
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-pix"></i>
+            <i class="fa-solid fa-fire"></i>
+            <i class="fa-brands fa-paypal"></i>
+            <i class="fa-solid fa-barcode"></i>
+            {{ index $content_parts $count | safe.HTML }}
+            {{ $count := add $count 1 }}
+        </div>
+    </div>
+    
+    <!--Sobre o suporte-->
+    <div class="row alternate">
+        <div class="col-12">
+            {{ index $content_parts $count | safe.HTML }}
+            {{ $count := add $count 1 }}
+        </div>
+    </div>
+
+    <!--Sobre o professor-->
+    <div class="row">
+        <div class="col-12">
+            <h2>E quem é o professor?</h2>
+        </div><br>
+        <div class="col-6 quempic">
+            <img src="/profile.jpeg">
+        </div>
+        <div class="col-6 quemtext">
+            {{ index $content_parts $count | safe.HTML }}
+            {{ $count := add $count 1 }}
+        </div>
+    </div>
+
+    <!--Para quem é?-->
+    <div class="row alternate">
+        <div class="col-12">
+            {{ index $content_parts $count | safe.HTML }}
+            {{ $count := add $count 1 }}
+        </div>
+    </div>
+
+    <!--Lógica do método-->
+    <div class="row">
+        <div class="col-12">
+            {{ index $content_parts $count | safe.HTML }}
+            {{ $count := add $count 1 }}
+        </div>
+    </div>
+
+    <!--Valor agregado e facilidade de implementação-->
+    <div class="row alternate">
+        <div class="col-12">
+            {{ index $content_parts $count | safe.HTML }}
+            {{ $count := add $count 1 }}
+        </div>
+    </div>
+
+    <!--Botão do whats-->
+    <div class="row">
+        <div class="col-12">
+            {{ index $content_parts $count | safe.HTML }}
+            {{ $count := add $count 1 }}
+        </div>
+    </div>
+
+    <!--CTA 2-->
+    <div class="row alternate">
+        <div class="col-12 lpcta">
+            <a href="{{ .Params.buttonURL }}"><button>{{ .Params.buttonTXT }}</button></a><br>
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-pix"></i>
+            <i class="fa-solid fa-fire"></i>
+            <i class="fa-brands fa-paypal"></i>
+            <i class="fa-solid fa-barcode"></i>
+            {{ index $content_parts $count | safe.HTML }}
+            {{ $count := add $count 1 }}
+        </div>
+    </div>
+
+    <footer class="row">
+        <hr>
+        <div class="col-6 left">
+            {{ index $content_parts $count | safe.HTML }}
+            {{ $count := add $count 1 }}
+        </div>
+        <div class="col-6 right">
+            {{ index $content_parts $count | safe.HTML }}
+            {{ $count := add $count 1 }}
+        </div>
+    </footer>
+{{ end }}

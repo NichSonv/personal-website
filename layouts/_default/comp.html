@@ -1,0 +1,25 @@
+{{ define "main" }}
+    <div class="row">
+        <!--<div class="col-3">
+        </div>-->
+        <div class="col-12">
+            <main>
+                {{ .Content }}
+            </main>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4 cta-prof">
+            <main style="height: fit-content;">
+                <a href="{{ ref . "/theoryLp.md" }}">
+                    <p>
+                        Prefere compor você mesmo?<br>
+                        <span>Eu te ensino!</span>
+                    </p>
+                </a>
+            </main>
+        </div>
+        <div class="col-4"></div>
+    </div>
+{{ end }}

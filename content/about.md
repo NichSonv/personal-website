@@ -1,8 +1,9 @@
 ---
 title: "Sobre mim"
 date: 2021-06-15T18:56:26-03:00
-draft: false
+draft: true
 weight: 1
+hidden: true
 ---
 # Eu te ajudo a absover toda a teoria musical e aplicá-la na sua prática!
 

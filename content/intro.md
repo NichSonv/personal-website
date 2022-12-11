@@ -1,10 +1,10 @@
 ---
 title: "General"
 date: 2022-12-11T03:21:40-03:00
-draft: false
+draft: true
 keywords: "-, nicholas, sonvezzo, somvezzo, som-vezzo, -"
 weight: 0
-hidden: false
+hidden: true
 ---
 # [Sobre]({{< relref "about.md" >}}) Nicholas Sonvezzo {#h-about}
 

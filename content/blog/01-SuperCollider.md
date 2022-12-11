@@ -4,6 +4,7 @@ date: 2021-03-15T15:46:46-03:00
 date_short: 15.03.2021
 draft: true
 keywords: "-, nicholas, sonvezzo, supercollider, música, síntese sonora, computação, programação, -"
+hidden: true
 ---
 - [Que software?](#esse-software-vai-te-permitir-criar-seus-próprios-sintetizadores-e-músicas)
 

@@ -1,9 +1,9 @@
 {{ define "style" }}
     <style>
         body {
-            height: 100vh;
             box-shadow: none;
-            background-color: #00000000
+            background-color: #00000000;
+            min-height: 100vh;
         }
         header {
             padding-top: 1rem;
@@ -19,10 +19,12 @@
             width: 100%;
         }
         a {
-            color: #cbacff;
+            color: var(--orange);
         }
         @media only screen and (min-width: 500px) {
-            
+            a:hover {
+                color: var(--lightBlue);
+            }
         }
     </style>
 {{ end }}

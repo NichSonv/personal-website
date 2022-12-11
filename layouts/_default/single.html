@@ -1,4 +1,6 @@
 {{ define "main" }}
+    {{ partial "nav" . }}
+    {{ partial "header.html" . }}
     <div class="row">
         <!--<div class="col-3">
         </div>-->
@@ -9,4 +11,5 @@
         </div>
     </div>
     {{ partial "cta" . }}
+    {{ partial "footer.html" . }}
 {{ end }}

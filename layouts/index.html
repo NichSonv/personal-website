@@ -1,5 +1,28 @@
+{{ define "style" }}
+    <style>
+        body {
+            height: 100vh;
+        }
+        header {
+            padding-top: 1rem;
+            width: 100%;
+            align-items: center;
+        }
+        header a {
+            font-size: 0em;
+        }
+        li {
+            list-style: none;
+            list-style-position: inside;
+            line-height: 2em;
+            font-size: 2em;
+            width: 100%;
+            margin-left: -1rem;
+        }
+    </style>
+{{ end }}
 {{ define "main" }}
-    {{ partial "cta.html" . }}
+    {{ partial "header.html" . }}
     <div class="row">
         <div class="col-12">
             {{ .Content }}

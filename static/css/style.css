@@ -34,7 +34,7 @@ body {
   color: var(--purple);
   margin: 0;
   text-align: center;
-  font-family: Comfortaa, Verdana, Tahoma, Helvetica, Arial, sans-serif;
+  font-family: "Jura", "Comfortaa", Verdana, Tahoma, Helvetica, Arial, sans-serif;
 }
 header {padding-top: 45px;}
 header strong {
@@ -42,7 +42,7 @@ header strong {
   color: var(--orange);
 }
 header svg {
-  width: 60vw;
+  width: 35vw;
   height: auto;
   fill: var(--orange);
   stroke: var(--orange);

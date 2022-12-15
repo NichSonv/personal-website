@@ -15,7 +15,10 @@
   --borderRoundness: 15px;
   --borderRoundness2: 5px;
 }
-* {box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+  border: solid 1px red;
+}
 /* MOBILE */
 [class*="col-"] {
   float: left;
@@ -31,7 +34,7 @@ html {background-image: linear-gradient(to bottom, var(--htmlFade1), var(--htmlF
 body {
   background-color: #00000044;
   border-radius: var(--borderRoundness);
-  color: var(--purple);
+  color: whitesmoke;
   margin: 0;
   text-align: center;
   font-family: "Jura", "Comfortaa", Verdana, Tahoma, Helvetica, Arial, sans-serif;
@@ -49,7 +52,6 @@ header svg {
   stroke: var(--orange);
 }
 .divisor {color: var(--orange);}
-.foot {color: var(--purple);}
 footer {
   float: left;
   clear: both;
@@ -77,6 +79,12 @@ p {
   font-size: 1.1em;
   line-height: 1.3em;
 }
+img {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  margin: auto;
+}
 .portraits-p img {
   width: 100%;
   height: auto;
@@ -88,7 +96,7 @@ p {
 }
 a {
   text-decoration: none;
-  color: var(--lightBlue);
+  color: var(--orange);
 }
 .homelink {
   text-decoration: none;
@@ -241,7 +249,6 @@ hr {
   }
   body {
     padding-top: 3vh;
-    
   }
   .mainlinks ul {
     width: 100%;
@@ -314,6 +321,12 @@ hr {
   .mainlinks li {margin: auto 0.3rem;}
   .cta a:hover {color: var(--darkOrange);}
   .scThumb a:hover {color: var(--backColor);}
+  .left ul {
+    text-align: right;
+  }
+  .right ul {
+    text-align: left;
+  }
 }
 /* For precaution */
 @media only screen and (max-width: 200px) {

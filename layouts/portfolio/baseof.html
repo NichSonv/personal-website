@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {{ partial "head.html" . }}
+        {{ block "css-link" . }}
+            <link rel="stylesheet" href="/css/style.css">
+        {{ end }}
+        {{ block "style" . }}{{ end }}
+    </head>
+    <body>
+        {{ partial "tagBody.html" . }}
+        {{ block "main" . }}{{ end }}
+    </body>
+</html>

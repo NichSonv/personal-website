@@ -1,0 +1,48 @@
+{{ define "main" }}
+    {{ partial "nav" . }}
+    {{ partial "header.html" . }}
+    <div class="row">
+        <nav class="col-12 subnav">
+            <a href=".." style="float: left; margin: auto 1rem;">back</a>
+        </nav>
+    </div>
+    <div class="row">
+        {{ .Content }}
+        <!--<div class="col-3">
+            <h2>Códigos</h2>
+            <ul>
+                {{ range where (where .Site.RegularPages "Type" "portfolio") "File.Dir" "portfolio/codes/" }}
+                <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                {{ end }}
+            </ul>
+        </div>
+        <div class="col-3">
+            <h2>UI, UX e interfaces</h2>
+            <ul>
+                {{ range where (where .Site.RegularPages "Type" "portfolio") "File.Dir" "portfolio/ui-ux/" }}
+                <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                {{ end }}
+            </ul>
+        </div>
+        <div class="col-3">
+            <h2>Websites</h2>
+            <ul>
+                {{ range where (where .Site.RegularPages "Type" "portfolio") "File.Dir" "portfolio/websites/" }}
+                <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                {{ end }}
+            </ul>
+        </div>
+        <div class="col-3">
+            <h2>Composições</h2>
+            <ul>
+                {{ range where (where .Site.RegularPages "Type" "portfolio") "File.Dir" "portfolio/pieces/" }}
+                <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                {{ end }}
+            </ul>
+        </div>-->
+        {{ range .Pages }}
+            <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+        {{ end }}
+    </div>
+    {{ partial "footer.html" . }}
+{{ end }}

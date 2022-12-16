@@ -8,3 +8,5 @@ weight: 0
 hidden: false
 ---
 # Portfolio
+
+Abaixo estão os meus projetos (músicas, códigos, interfaces, websites...) [WIP]

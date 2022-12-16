@@ -15,7 +15,8 @@ hidden: true
 
 ## Interface e programação
 
-<a href="/amagus/amagus1.png"><img src="{{ relref . "amagus1.png" }}></a>
+<!--<a href="/amagus/amagus1.png"><img src="{{ relref . "amagus1.png" }}></a>-->
+![amagus1](.amagus1.png)
 
 Essa foi uma interface que criei para a execução da peça Âmagus, em julho/2022 ([link para gravação no YT](https://youtu.be/Ey08N9ciDtE)). Todo o design, comportamento dos botões, páginas etc, foi feito através do programa _TouchOSC_, e todo o código que programa as ações dos mesmos, foi escrito em _sclang_, no _SuperCollider_, que também é onde tudo é processado.
 

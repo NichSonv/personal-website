@@ -1,11 +1,7 @@
 {{ define "main" }}
     {{ partial "nav" . }}
     {{ partial "header.html" . }}
-    <div class="row"> <!-- Make a "previous menu next" kind of nav? -->
-        <nav class="col-12 subnav">
-            <a href=".." style="margin: auto 1rem;">back</a>
-        </nav>
-    </div>
+    {{ partial "subnav.html" . }}
     <div class="row">
         <!--<div class="col-3">
         </div>-->

@@ -17,7 +17,7 @@
 }
 * {
   box-sizing: border-box;
-  /* border: solid 1px red; */
+   border: solid 1px red;
 }
 /* MOBILE */
 [class*="col-"] {
@@ -214,6 +214,10 @@ hr {
   border-radius: var(--borderRoundness);
 }
 #homeSongs + ul li {margin-bottom: 0.3rem;}
+.left h5, .right h5 {
+  font-size: 1.1em;
+  margin: 0.8rem auto;
+}
 /* TABLETS */
 @media only screen and (min-width: 500px) {
   .col-s-1 {width: 8.33%;}
@@ -321,10 +325,10 @@ hr {
   .mainlinks li {margin: auto 0.3rem;}
   .cta a:hover {color: var(--darkOrange);}
   .scThumb a:hover {color: var(--backColor);}
-  .left ul {
+  .left {
     text-align: right;
   }
-  .right ul {
+  .right {
     text-align: left;
   }
 }

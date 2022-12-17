@@ -5,5 +5,5 @@ date: {{ .Date }}
 draft: true
 keywords: "-, nicholas, sonvezzo, somvezzo, som-vezzo, -"
 weight: 0
-hidden: true
+hidden: false
 ---

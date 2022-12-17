@@ -8,11 +8,3 @@ hidden: false
 ---
 Bem-vindo ao meu site!  
 Abaixo os links principais (WIP):
-
-<span class="index-links">
-
-<!--[Quem sou?]({{< relref "about.md" >}})-->
-[Portfolio]({{< ref "portfolio/_index.md" >}})
-<!--[Blog]({{< relref "blog/_index.md" >}})-->
-<!--[Curso online]({{< relref "#">}})-->
-</span>

@@ -17,7 +17,11 @@
         a {
             color: var(--orange);
         }
-        .index-links {
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 1rem 1rem 0;
+            width: 100%;
             font-size: 2em;
             line-height: 1.5em;
         }
@@ -33,6 +37,13 @@
     <div class="row">
         <div class="col-12">
             {{ .Content }}
+            <ul>
+                {{ range .Site.Home.Pages }}
+                    {{ if not (eq .Page.Params.hidden true) }}
+                    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                    {{ end }}
+                {{ end }}
+            </ul>
         </div>
     </div>
 {{ end }}

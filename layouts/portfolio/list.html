@@ -3,8 +3,9 @@
     {{ partial "header.html" . }}
     {{ partial "subnav.html" . }}
     {{ .Content }}
-        <div class="col-3">
-            <!--<h2>Códigos</h2>
+    <div class="col-12">
+        <!--<div class="col-3">
+            <h2>Códigos</h2>
             <ul>
                 {{ range where (where .Site.RegularPages "Type" "portfolio") "File.Dir" "portfolio/codes/" }}
                 <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>

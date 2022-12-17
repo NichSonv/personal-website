@@ -9,9 +9,6 @@
     </head>
     <body>
         {{ partial "tagBody.html" . }}
-        {{ partial "nav" . }}
-        {{ partial "header.html" . }}
         {{ block "main" . }}{{ end }}
-        {{ partial "footer.html" . }}
     </body>
 </html>

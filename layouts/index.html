@@ -1,8 +1,49 @@
+{{ define "style" }}
+    <style>
+        body {
+            box-shadow: none;
+            min-height: 100vh;
+        }
+        header {
+            padding-top: 1rem;
+            width: 100%;
+            align-items: center;
+        }
+        p {
+            line-height: 1.5em;
+            font-size: 1em;
+            width: 100%;
+        }
+        a {
+            color: var(--orange);
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 1rem 1rem 0;
+            width: 100%;
+            font-size: 2em;
+            line-height: 1.5em;
+        }
+        @media only screen and (min-width: 500px) {
+            a:hover {
+                color: var(--lightBlue);
+            }
+        }
+    </style>
+{{ end }}
 {{ define "main" }}
-    {{ partial "cta.html" . }}
+    {{ partial "header.html" . }}
     <div class="row">
         <div class="col-12">
             {{ .Content }}
+            <ul>
+                {{ range .Site.Home.Pages }}
+                    {{ if not (eq .Page.Params.hidden true) }}
+                    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                    {{ end }}
+                {{ end }}
+            </ul>
         </div>
     </div>
 {{ end }}

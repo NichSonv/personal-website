@@ -15,7 +15,10 @@
   --borderRoundness: 15px;
   --borderRoundness2: 5px;
 }
-* {box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+   border: solid 1px red;
+}
 /* MOBILE */
 [class*="col-"] {
   float: left;
@@ -31,10 +34,11 @@ html {background-image: linear-gradient(to bottom, var(--htmlFade1), var(--htmlF
 body {
   background-color: #00000044;
   border-radius: var(--borderRoundness);
-  color: var(--purple);
+  color: whitesmoke;
   margin: 0;
   text-align: center;
-  font-family: Comfortaa, Verdana, Tahoma, Helvetica, Arial, sans-serif;
+  font-family: "Jura", "Comfortaa", Verdana, Tahoma, Helvetica, Arial, sans-serif;
+  min-height: 100vh;
 }
 header {padding-top: 45px;}
 header strong {
@@ -42,13 +46,12 @@ header strong {
   color: var(--orange);
 }
 header svg {
-  width: 60vw;
+  width: 35vw;
   height: auto;
   fill: var(--orange);
   stroke: var(--orange);
 }
 .divisor {color: var(--orange);}
-.foot {color: var(--purple);}
 footer {
   float: left;
   clear: both;
@@ -76,6 +79,12 @@ p {
   font-size: 1.1em;
   line-height: 1.3em;
 }
+img {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  margin: auto;
+}
 .portraits-p img {
   width: 100%;
   height: auto;
@@ -87,7 +96,7 @@ p {
 }
 a {
   text-decoration: none;
-  color: var(--lightBlue);
+  color: var(--orange);
 }
 .homelink {
   text-decoration: none;
@@ -205,6 +214,10 @@ hr {
   border-radius: var(--borderRoundness);
 }
 #homeSongs + ul li {margin-bottom: 0.3rem;}
+.left h5, .right h5 {
+  font-size: 1.1em;
+  margin: 0.8rem auto;
+}
 /* TABLETS */
 @media only screen and (min-width: 500px) {
   .col-s-1 {width: 8.33%;}
@@ -219,8 +232,7 @@ hr {
   .col-s-10 {width: 83.33%;}
   .col-s-11 {width: 91.66%;}
   .col-s-12 {width: 100%;}
-  html {background: conic-gradient(var(--htmlFade1), var(--htmlFade2), var(--htmlFade1), var(--htmlFade2), var(--htmlFade1)) repeat-y fixed;}
-  header {padding-top: 0;}
+  header {padding-top: 50px;}
   header strong {font-size: 1.2rem;}
   header svg {
     width: auto;
@@ -241,7 +253,6 @@ hr {
   }
   body {
     padding-top: 3vh;
-    
   }
   .mainlinks ul {
     width: 100%;
@@ -299,6 +310,7 @@ hr {
   .col-10 {width: 83.33%;}
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
+  html {background: conic-gradient(var(--htmlFade1), var(--htmlFade2), var(--htmlFade1), var(--htmlFade2), var(--htmlFade1)) repeat-y fixed;}
   body {
     margin: 2rem 3rem;
     box-shadow: 1px 5px 8px rgba(0, 0, 0, 0.3), -1px 5px 8px var(--htmlFade2);
@@ -313,6 +325,12 @@ hr {
   .mainlinks li {margin: auto 0.3rem;}
   .cta a:hover {color: var(--darkOrange);}
   .scThumb a:hover {color: var(--backColor);}
+  .left {
+    text-align: right;
+  }
+  .right {
+    text-align: left;
+  }
 }
 /* For precaution */
 @media only screen and (max-width: 200px) {

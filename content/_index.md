@@ -7,4 +7,4 @@ keywords: "-, nicholas, músico, compositor, composição, supercollider, sínte
 hidden: false
 ---
 Bem-vindo ao meu site!  
-Abaixo os links principais (WIP):
+<!--Abaixo os links principais (WIP):-->

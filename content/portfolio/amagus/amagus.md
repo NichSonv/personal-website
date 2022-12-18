@@ -1,5 +1,6 @@
 ---
-title: "Âmagus project"
+title: "Âmagus"
+listag: "M C I"
 subhead: "Compositor • Programador"
 date: 2022-12-12T14:30:22-03:00
 draft: true

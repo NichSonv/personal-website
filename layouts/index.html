@@ -17,7 +17,7 @@
         a {
             color: var(--orange);
         }
-        ul {
+        main ul {
             list-style: none;
             padding: 0;
             margin: 1rem 1rem 1rem 0;
@@ -35,7 +35,7 @@
 {{ define "main" }}
     {{ partial "header.html" . }}
     <div class="row">
-        <div class="col-12">
+        <main class="col-12">
             {{ .Content }}
             <ul>
                 {{ range .Site.Home.Pages }}
@@ -44,6 +44,7 @@
                     {{ end }}
                 {{ end }}
             </ul>
-        </div>
+        </main>
     </div>
+    {{ partial "footer.html" . }}
 {{ end }}

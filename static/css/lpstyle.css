@@ -1,4 +1,4 @@
-/* General -> Specific */
+/* Variables */
 :root {
   --color: #cbacff;
   --color2: #ffd5a4;
@@ -15,9 +15,10 @@
   --thruColor: #0006;
   --borderRound: 15px;
 }
-* {box-sizing: border-box;}
-/* MOBILE */
-/* Big parents */
+
+/* MOBILE ================================== */
+
+/* Whole page */
 html {
   background: linear-gradient(to bottom left, var(--backColor1), var(--backColor2)) fixed;
   height: 100%;
@@ -48,42 +49,33 @@ body {
   margin: 0;
   overflow-x: hidden;
 }
-/* Body elements */
-footer {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
-footer ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+
+/* Page top */
+.cover {
+  opacity: 60%;
+  position: absolute;
+  right: -30px;
+  overflow: hidden;
+  overflow-x: hidden;
+  max-width: 500px;
 }
-footer a {
-  text-decoration: none;
-  color: var(--color);
+.rfm {
+  position: absolute;
+  top: 250px;
+  left: 0;
+  max-width: 700px;
 }
-footer a:hover {
-  color: var(--color2);
-}
+
+/* Main content */
 h1 {
   margin: 420px auto 1.2rem auto;
   font-size: 1.6em;
   line-height: 1.4em;
   color: var(--color3);
   text-align: center;
-}
-.vvv h2 {
-  font-size: 1.1em;
-  text-align: center;
-  font-weight: 400;
-  line-height: 1.5em;
-  color: whitesmoke;
-}
-.vvv h3 {
-  text-align: center;
-  font-size: 1em;
-  font-weight: 400;
-  margin: 1rem auto 2rem auto;
-  color: var(--color4);
 }
 h2 {
   width: 100%;
@@ -118,25 +110,6 @@ strong {
   color: var(--color3);
   font-weight: 700;
 }
-.teacher p {
-  text-align: center;
-  max-width: 650px;
-}
-.vvv ul {
-  width: fit-content;  
-  font-size: 1em;
-  max-width: 1000px;
-  line-height: 1.4em;
-}
-.vvv li {
-  list-style: none;
-  text-align: center;
-  list-style-position: inside;
-  margin: 1.3rem auto 1.3rem -2.5rem;
-  padding: 1rem 1.4rem;
-  border: solid 2px var(--color4);
-  border-radius: var(--borderRound);
-}
 button {
   margin: 1rem auto;
   width: fit-content;
@@ -153,6 +126,68 @@ button {
   text-transform: uppercase;
   box-shadow: 0 0 15px 1px var(--buttonBorder);
 }
+button:hover {
+  background-color: var(--buttonBorder);
+  color: var(--buttonColor);
+  border-color: var(--buttonColor);
+}
+ul {
+  list-style-position: outside;
+  width: 100%;
+  margin: -1rem auto 1rem auto;
+  line-height: 1.9em;
+}
+iframe {
+  border-radius: 30px;
+  margin: auto;
+}
+img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--borderRound);
+}
+.teacher p {
+  text-align: center;
+  max-width: 650px;
+}
+.vvv div {
+  margin: 1rem auto 1.5rem auto;
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+.vvv div, iframe {
+  max-width: 620px;
+  max-height: 400px;
+}
+.vvv ul {
+  width: fit-content;  
+  font-size: 1em;
+  max-width: 1000px;
+  line-height: 1.4em;
+}
+.vvv li {
+  list-style: none;
+  text-align: center;
+  list-style-position: inside;
+  margin: 1.3rem auto 1.3rem -2.5rem;
+  padding: 1rem 1.4rem;
+  border: solid 2px var(--color4);
+  border-radius: var(--borderRound);
+}
+.vvv h2 {
+  font-size: 1.1em;
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: whitesmoke;
+}
+.vvv h3 {
+  text-align: center;
+  font-size: 1em;
+  font-weight: 400;
+  margin: 1rem auto 2rem auto;
+  color: var(--color4);
+}
 .whatsbt {
   text-align: center;
 }
@@ -165,17 +200,6 @@ button {
   background-color: var(--whatsBorder);
   border-color: var(--whatsColor);
   color: var(--whatsColor);
-}
-button:hover {
-  background-color: var(--buttonBorder);
-  color: var(--buttonColor);
-  border-color: var(--buttonColor);
-}
-ul {
-  list-style-position: outside;
-  width: 100%;
-  margin: -1rem auto 1rem auto;
-  line-height: 1.9em;
 }
 .lpcta ul {
   list-style-type: circle; 
@@ -204,40 +228,8 @@ ul {
   line-height: 1.3em;
   color: var(--color2);
 }
-.vvv div {
-  margin: 1rem auto 1.5rem auto;
-  width: 100%;
-  padding-bottom: 56.25%;
-}
-iframe {
-  border-radius: 30px;
-  margin: auto;
-}
-.vvv div, iframe {
-  max-width: 620px;
-  max-height: 400px;
-}
-img {
-  width: 100%;
-  height: auto;
-  border-radius: var(--borderRound);
-}
 .teacher img {
   max-width: 300px;
-}
-.cover {
-  opacity: 60%;
-  position: absolute;
-  right: -30px;
-  overflow: hidden;
-  overflow-x: hidden;
-  max-width: 500px;
-}
-.rfm {
-  position: absolute;
-  top: 250px;
-  left: 0;
-  max-width: 700px;
 }
 .quemeh {
   text-align: left;
@@ -267,8 +259,24 @@ img {
   overflow-x: hidden;
 }
 
-/* TABLETS */
-@media only screen and (min-width: 500px) {
+/* Page lower */
+footer {
+  text-align: center;
+}
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+footer a {
+  text-decoration: none;
+  color: var(--color);
+}
+footer a:hover {
+  color: var(--color2);
+}
+
+@media only screen and (min-width: 500px) { /* TABLETS ================================= */
   .col-s-1 {width: 8.33%;}
   .col-s-2 {width: 16.66%;}
   .col-s-3 {width: 25%;}
@@ -281,6 +289,18 @@ img {
   .col-s-10 {width: 83.33%;}
   .col-s-11 {width: 91.66%;}
   .col-s-12 {width: 100%;}
+
+  /* Whole page */
+
+  /* Page top */
+  .cover {
+    right: 5vw;
+  }
+  .rfm {
+    left: 3vw;
+  }
+
+  /* Main content */
   h1 {
     margin-top: 570px;
   }
@@ -288,16 +308,11 @@ img {
     width: 70%;
     margin: 1.3rem auto;
   }
-  .cover {
-    right: 5vw;
-  }
-  .rfm {
-    left: 3vw;
-  }
+
+  /* Page lower */
 }
 
-/* DESKTOP */
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 800px) { /* DESKTOP ========================================== */
   .col-1 {width: 8.33%;}
   .col-2 {width: 16.66%;}
   .col-3 {width: 25%;}
@@ -310,14 +325,20 @@ img {
   .col-10 {width: 83.33%;}
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
-  .vvv div {
-    padding-bottom: 30%;
-  }
+
+  /* Whole page */
+
+  /* Page top */
   .cover {
     right: 20vw;
   }
   .rfm {
     left: 25%;
+  }
+
+  /* Main content */
+  .vvv div {
+    padding-bottom: 30%;
   }
   .teacher img {
     float: left;
@@ -326,8 +347,13 @@ img {
   .teacher p {
     text-align: left;
   }
+
+  /* Page lower */
+  
 }
 /* For precaution */
 @media only screen and (max-width: 200px) {
-  body {word-break: break-all;}
+  body {
+    word-break: break-all;
+  }
   }

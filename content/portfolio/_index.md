@@ -9,4 +9,15 @@ hidden: false
 ---
 # Portfolio
 
-Abaixo estão os meus projetos (músicas, códigos, interfaces, websites...) [WIP]
+<div class="legenda">
+
+_Legenda para navegação:_
+- M - Música, composição pessoal, trilha sonora...
+- C - Código, linguagem de programação...
+- I - Interface, design...
+- W - Websites.
+- WIP - _Work in progress_, trabalho em andamento.
+
+</div>
+
+Abaixo uma lista com meus melhores projetos...

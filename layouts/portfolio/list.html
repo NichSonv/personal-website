@@ -36,9 +36,11 @@
                 {{ end }}
             </ul>
         </div>-->
-        {{ range .Pages }}
-            <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-        {{ end }}
+        <ul id="portfolio-list">
+            {{ range .Pages }}
+                <li><a href="{{ .Permalink }}">{{ .Title }} ( {{ .Page.Params.listag }} )</a></li>
+            {{ end }}
+        </ul>
     </div>
     {{ partial "footer.html" . }}
 {{ end }}

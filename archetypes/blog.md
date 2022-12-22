@@ -1,8 +1,10 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
+date_short: ""
 draft: true
 keywords: ""
-weight: 0
-hidden: false
 ---
+<span class="blog-date">{{ .Date }}</span>
+
+# {{ .Title }}

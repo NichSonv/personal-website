@@ -1,0 +1,138 @@
+:root {
+    /* Colors Shiny */
+    --superLight-shiny-orange: 255, 213, 164;
+    --superLight-shiny-purple: 203, 172, 255;
+    --superLight-shiny-blue: 168, 227, 255;
+    --superLight-shiny-green: 213, 255, 164;
+
+    --light-shiny-orange: 255, 189, 112;
+    --light-shiny-purple: 173, 126, 255;
+    --light-shiny-blue: 119, 211, 255;
+    --light-shiny-green: 189, 255, 112;
+
+    --shiny-orange: 255, 137, 0;
+    --shiny-purple: 109, 24, 255;
+    --shiny-blue: 12, 176, 255;
+    --shiny-green: 137, 255, 0;
+
+    --dark-shiny-orange: 217, 116, 0;
+    --dark-shiny-purple: 54, 0, 148;
+    --dark-shiny-blue: 0, 92, 137;
+    --dark-shiny-green: 105, 197, 0;
+
+    --superDark-shiny-orange: 167, 89, 0;
+    --superDark-shiny-purple: 42, 0, 114;
+    --superDark-shiny-blue: 0, 71, 106;
+    --superDark-shiny-green: 81, 151, 0;
+
+    /* Colors Neon */
+    --superLight-neon-orange: 235, 126, 2;
+    --superLight-neon-purple: 69, 16, 160;
+    --superLight-neon-blue: 8, 103, 148;
+    --superLight-neon-green: 115, 213, 1;
+
+    --light-neon-orange: 186, 105, 11;
+    --light-neon-purple: 58, 19, 127;
+    --light-neon-blue: 13, 83, 118;
+    --light-neon-green: 95, 169, 10;
+
+    --neon-orange: 151, 84, 8;
+    --neon-purple: 47, 15, 103;
+    --neon-blue: 10, 67, 95;
+    --neon-green: 77, 137, 7;
+
+    --dark-neon-orange: 105, 56, 0;
+    --dark-neon-purple: 31, 8, 71;
+    --dark-neon-blue: 3, 46, 67;
+    --dark-neon-green: 51, 96, 0;
+
+    --superDark-neon-orange: 62, 33, 0;
+    --superDark-neon-purple: 18, 4, 42;
+    --superDark-neon-blue: 2, 27, 39;
+    --superDark-neon-green: 30, 56, 0;
+
+    /* Colors Deep */
+    --superLight-deep-orange: 168, 90, 0;
+    --superLight-deep-purple: 47, 8, 115;
+    --superLight-deep-blue: 4, 73, 106;
+    --superLight-deep-green: 82, 153, 0;
+
+    --light-deep-orange: 115, 62, 0;
+    --light-deep-purple: 31, 3, 78;
+    --light-deep-blue: 2, 49, 73;
+    --light-deep-green: 56, 104, 0;
+
+    --deep-orange: 70, 39, 3;
+    --deep-purple: 21, 6, 48;
+    --deep-blue: 4, 31, 44;
+    --deep-green: 35, 63, 2;
+
+    --dark-deep-orange: 54, 29, 0;
+    --dark-deep-purple: 15, 2, 37;
+    --dark-deep-blue: 1, 23, 34;
+    --dark-deep-green: 26, 49, 0;
+
+    --superDark-deep-orange: 42, 22, 0;
+    --superDark-deep-purple: 12, 3, 28;
+    --superDark-deep-blue: 1, 18, 26;
+    --superDark-deep-green: 20, 38, 0;
+
+    /* Colors Pastel Light */
+    --superLight-pastelLight-orange: 255, 223, 186;
+    --superLight-pastelLight-purple: 203, 181, 240;
+    --superLight-pastelLight-blue: 177, 218, 238;
+    --superLight-pastelLight-green: 219, 251, 183;
+
+    --light-pastelLight-orange: 255, 203, 143;
+    --light-pastelLight-purple: 166, 133, 222;
+    --light-pastelLight-blue: 126, 187, 217;
+    --light-pastelLight-green: 195, 245, 137;
+
+    --pastelLight-orange: 255, 186, 107;
+    --pastelLight-purple: 133, 95, 200;
+    --pastelLight-blue: 86, 157, 192;
+    --pastelLight-green: 174, 239, 100;
+
+    --dark-pastelLight-orange: 255, 172, 76;
+    --dark-pastelLight-purple: 105, 64, 176;
+    --dark-pastelLight-blue: 54, 128, 164;
+    --dark-pastelLight-green: 156, 232, 69;
+
+    --superDark-pastelLight-orange: 233, 142, 37;
+    --superDark-pastelLight-purple: 82, 38, 159;
+    --superDark-pastelLight-blue: 29, 109, 147;
+    --superDark-pastelLight-green: 129, 211, 33;
+
+    /* Colors Pastel */
+    --superLight-pastel-orange: 255, 216, 170;
+    --superLight-pastel-purple: 141, 121, 174;
+    --superLight-pastel-blue: 110, 145, 161;
+    --superLight-pastel-green: 196, 231, 154;
+
+    --light-pastel-orange: 212, 163, 106;
+    --light-pastel-purple: 103, 79, 145;
+    --light-pastel-blue: 71, 114, 134;
+    --light-pastel-green: 148, 193, 96;
+
+    --pastel-orange: 170, 117, 57;
+    --pastel-purple: 72, 46, 116;
+    --pastel-blue: 39, 85, 108;
+    --pastel-green: 107, 154, 51;
+
+    --dark-pastel-orange: 128, 78, 21;
+    --dark-pastel-purple: 45, 21, 87;
+    --dark-pastel-blue: 17, 60, 81;
+    --dark-pastel-green: 71, 116, 19;
+
+    --superDark-pastel-orange: 85, 46, 0;
+    --superDark-pastel-purple: 25, 6, 58;
+    --superDark-pastel-blue: 3, 37, 54;
+    --superDark-pastel-green: 41, 77, 0;
+
+    /* Colors neutral */
+    --white: 245, 245, 245;
+    --light-gray: 187, 187, 187;
+    --gray: 119, 119, 119;
+    --dark-gray: 51, 51, 51;
+    --black: 0, 0, 0;
+}

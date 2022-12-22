@@ -1,15 +1,14 @@
 {{ define "main" }}
-    {{ partial "nav" . }}
-    {{ partial "header.html" . }}
-    {{ partial "subnav.html" . }}
-    <div class="row">
-        <!--<div class="col-3">
-        </div>-->
-        <div class="col-12">
-            <main>
-                {{ .Content }}
-            </main>
-        </div>
-    </div>
-    {{ partial "footer.html" . }}
+    <main class="col-9">
+        {{ .Content }}
+    </main>
+    <nav class="col-3">
+        {{ partial "port-nav-leg.html" . }}
+        <ul id="portfolio-list">
+            {{ range .Parent.Pages }}
+                <li><a href="{{ .Permalink }}">{{ .Title }} {{ .Page.Params.listag }}</a></li>
+            {{ end }}
+            <li><a href="{{ .Parent.Permalink }}">Voltar em {{ .Parent.Title }}</a></li>
+        </ul>
+    </nav>
 {{ end }}

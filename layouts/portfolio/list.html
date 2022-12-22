@@ -1,46 +1,13 @@
 {{ define "main" }}
-    {{ partial "nav" . }}
-    {{ partial "header.html" . }}
-    {{ partial "subnav.html" . }}
-    {{ .Content }}
-    <div class="col-12">
-        <!--<div class="col-3">
-            <h2>Códigos</h2>
-            <ul>
-                {{ range where (where .Site.RegularPages "Type" "portfolio") "File.Dir" "portfolio/codes/" }}
-                <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-                {{ end }}
-            </ul>
-        </div>
-        <div class="col-3">
-            <h2>UI, UX e interfaces</h2>
-            <ul>
-                {{ range where (where .Site.RegularPages "Type" "portfolio") "File.Dir" "portfolio/ui-ux/" }}
-                <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-                {{ end }}
-            </ul>
-        </div>
-        <div class="col-3">
-            <h2>Websites</h2>
-            <ul>
-                {{ range where (where .Site.RegularPages "Type" "portfolio") "File.Dir" "portfolio/websites/" }}
-                <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-                {{ end }}
-            </ul>
-        </div>
-        <div class="col-3">
-            <h2>Composições</h2>
-            <ul>
-                {{ range where (where .Site.RegularPages "Type" "portfolio") "File.Dir" "portfolio/pieces/" }}
-                <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-                {{ end }}
-            </ul>
-        </div>-->
+    <main class="col-9">
+        {{ .Content }}
         <ul id="portfolio-list">
             {{ range .Pages }}
-                <li><a href="{{ .Permalink }}">{{ .Title }} ( {{ .Page.Params.listag }} )</a></li>
+                <li><a href="{{ .Permalink }}">{{ .Title }} {{ .Page.Params.listag }}</a></li>
             {{ end }}
         </ul>
-    </div>
-    {{ partial "footer.html" . }}
+    </main>
+    <nav class="col-3">
+        {{ partial "port-nav-leg.html" . }}
+    </nav>
 {{ end }}

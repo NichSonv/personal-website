@@ -8,7 +8,7 @@ hidden: true
 # Eu te ajudo a absover toda a teoria musical e aplicá-la na sua prática!
 
 <p class="portraits-p">
-<a href="/about-img.png" style="margin:0;"><img src="/profile.jpeg" alt="Nicholas" style="height:400px"></a>
+<a href="/pictures/about-img.png" style="margin:0;"><img src="/pictures/profile.jpeg" alt="Nicholas" style="height:400px"></a>
 </p>
 
 Há mais de 10 anos atuando no mercado, ajudando pessoas a realizarem seus sonhos dentro do universo da música.  

@@ -7,4 +7,4 @@ keywords: ""
 ---
 <span class="blog-date">{{ .Date }}</span>
 
-# {{ .Title }}
+# {{ replace .Name "-" " " | title }}

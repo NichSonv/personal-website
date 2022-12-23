@@ -45,6 +45,19 @@ Para os respectivos sequenciadores, os botões verdes inicializam a sequência, 
 {{< gist NichSonv "a7084ba76b8726f984920a4f5ffaec2e" "02_spectrumMidi.scd" >}}
 
 A página três contêm uma versão reduzida e atualizada dos controles para o instrumento virtual _[Drone]({{< ref "drone.md" >}})_, possibilitando até três instâncias simultâneas do instrumento, com controles separados de espacialização, volume, reverb, delay, tremolo, on/off, e o mais importante, controles X/Y para controlar o timbre e formante principal do instrumento, que são suas características mais essenciais.
+
+## Sobre a peça e execução
+
+A poética por detrás da composição na verdade é muito simples, foi uma junção das principais vertentes com as quais gosto de trabalhar dentro da área musical, e isso pode ser observado nos cinco movimentos da peça:
+
+1. _"Etherium"_ - Música coral / Música sacra;
+2. _"Anima"_ - Violão e sons acústicos;
+3. _"Primals"_ - Síntese sonora e sequenciadores;
+4. _"Memoria"_ - Processos eletroacústicos e processamento de áudio;
+5. _"Spectrum"_ - Música meditativa.
+
+Você pode analisar o código completo clicando [aqui](https://github.com/NichSonv/compositions/blob/abd53d6ad0e959b7159114f08dc05bce09b3e79d/amagus.scd)
+
 <!-- 
 planejamento conteúdo:
 - Resumo do que é 

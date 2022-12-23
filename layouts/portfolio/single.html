@@ -8,7 +8,7 @@
             {{ range .Parent.Pages }}
                 <li><a href="{{ .Permalink }}">{{ .Title }} {{ .Page.Params.listag }}</a></li>
             {{ end }}
-            <li><a href="{{ .Parent.Permalink }}">Voltar em {{ .Parent.Title }}</a></li>
+            <li><a href="{{ .Parent.Permalink }}">Voltar para {{ .Parent.Title }}</a></li>
         </ul>
     </nav>
 {{ end }}

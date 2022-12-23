@@ -166,7 +166,7 @@ hr {
 }
 p {
   overflow: auto;
-  margin: 0.7rem auto;
+  margin: 0.7rem 0.1rem;
   width: fit-content;
   max-width: 1000px;
   padding: 0.2rem;
@@ -194,20 +194,21 @@ ul {
   text-align: left;
   width: fit-content;
 }
+li {
+  line-height: 1.3em;
+}
 .legenda {
   border: solid rgba(var(--light-gray), 1) 1px;
   padding: 0.2rem;
-  padding-right: 1rem;
+  padding-right: 0.6rem;
   color: rgba(var(--light-gray), 1);
   width: fit-content;
+  max-width: 90%;
   margin: auto;
 }
 .legenda ul {
   margin: 0.2rem auto;
   list-style-position: outside;
-}
-.legenda p {
-  margin: 0.1rem auto;
 }
 .portraits-p img {
   width: 100%;
@@ -247,8 +248,8 @@ ul {
   color: rgba(var(--superLight-shiny-blue), 1);
 }
 .scThumb iframe {
-  height: 140px;
   width: 100%;
+  height: 300px;
 }
 .scThumb div {
   color: rgba(var(--superLight-shiny-purple), 1);
@@ -257,14 +258,13 @@ ul {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  margin-bottom: 0.5rem;
 }
 .scThumb a {
   color: rgba(var(--superDark-deep-purple), 1);
 }
 .yt-video {
   max-width: 600px;
-  margin: auto;
+  margin: 1rem auto;
 }
 .yt-video div {
   padding-top: 56.25%;
@@ -292,12 +292,14 @@ ul {
   margin-bottom: 0.3rem;
 }
 #portfolio-list {
-  font-size: 1.15em;
-  line-height: 1.8em;
   list-style-type: circle;
   list-style-position: inside;
   padding: 0;
   margin: 1rem auto;
+}
+#portfolio-list li {
+  line-height: 1.8em;
+  font-size: 1.15em;
 }
 
 /* Page lower */
@@ -404,8 +406,8 @@ footer hr {
     height: 240px;
   }
   .scThumb iframe {
-    height: 240px;
-    width: 240px;
+    height: 130px;
+    width: 400px;
   }
   .scThumb a {
     font-size: 0.8em;
@@ -491,7 +493,7 @@ footer hr {
     color: rgba(var(--superDark-neon-purple), 0.5);
   }
   .legenda {
-    padding: 0.5rem;
+    padding: 0.3rem;
   }
 
   /* Page lower */

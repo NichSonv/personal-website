@@ -1,6 +1,6 @@
 ---
 title: "Âmagus"
-listag: "[ M C I ]"
+listag: "-M-C-I"
 date: 2022-12-12T14:30:22-03:00
 draft: false
 keywords: "-, nicholas, sonvezzo, somvezzo, som-vezzo, -"
@@ -26,7 +26,7 @@ Essa foi a interface que criei para a execução da peça. Todo o design, compor
 
 {{< gist NichSonv "a7084ba76b8726f984920a4f5ffaec2e" "00_midiGlobals.scd" >}}
 
-A primeira página possui cinco botões, cada um correspondente a um _movimento_ da peça, ou, nae programação, uma função pré-definida. Apertar um botão significa encerrar os processos da função anterior, preparar o ambiente e iniciar os processos da nova função (movimento).  
+A primeira página possui cinco botões, cada um correspondente a um _movimento_ da peça, ou, na programação, uma função pré-definida. Apertar um botão significa encerrar os processos da função anterior, preparar o ambiente e iniciar os processos da nova função (movimento).  
 Além dos cinco botões principais, há um sexto, pequeno, para a eventual necessidade de desligar todos os processos, em uma emergência. O famoso "botão do pânico".
 
 ### Interface página 2 - Sequenciadores
@@ -56,8 +56,9 @@ A poética por detrás da composição na verdade é muito simples, foi uma jun�
 4. _"Memoria"_ - Processos eletroacústicos e processamento de áudio;
 5. _"Spectrum"_ - Música meditativa.
 
-Você pode analisar o código completo clicando [aqui](https://github.com/NichSonv/compositions/blob/abd53d6ad0e959b7159114f08dc05bce09b3e79d/amagus.scd)
-
+<p class="centered"><strong>
+Você pode analisar o código completo clicando <a target="_blank" href="https://github.com/NichSonv/compositions/blob/abd53d6ad0e959b7159114f08dc05bce09b3e79d/amagus.scd">aqui</a>
+</strong></p>
 <!-- 
 planejamento conteúdo:
 - Resumo do que é 

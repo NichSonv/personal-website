@@ -1,6 +1,6 @@
 ---
 title: "Atmosphere"
-listag: "[ M C I ]"
+listag: "-M-C-I"
 date: 2022-12-23T01:36:15-03:00
 draft: false
 keywords: ""

@@ -38,16 +38,6 @@ body {
   clear: both;
   display: table;
 }
-.gist {
-  width: 100%;
-  max-width: 850px;
-  overflow: auto;
-  margin: auto;
-}
-.gist .blob-wrapper.data {
-  max-height: 300px;
-  overflow: auto;
-}
 
 /* Page top */
 header {
@@ -56,6 +46,7 @@ header {
 header strong {
   font-size: 4.9vw;
   color: rgba(var(--superLight-shiny-orange), 1);
+  text-decoration: none;
 }
 header svg {
   width: 200px;
@@ -184,18 +175,21 @@ img {
   width: 100%;
   height: auto;
   margin: auto;
-  border-radius: var(--border-roundness-15);
 }
 a {
   text-decoration: none;
   color: rgba(var(--light-shiny-blue), 1);
 }
-ul {
+ul, ol, dl {
   text-align: left;
   width: fit-content;
+  margin: 1rem auto;
 }
 li {
   line-height: 1.3em;
+}
+strong {
+  text-decoration: underline;
 }
 .legenda {
   border: solid rgba(var(--light-gray), 1) 1px;
@@ -278,6 +272,20 @@ li {
   top: 0;
   left: 0;
   border-radius: var(--border-roundness-15);
+}
+.gist {
+  width: 100%;
+  max-width: 850px;
+  overflow: auto;
+  margin: auto;
+}
+.gist .blob-wrapper.data {
+  max-height: 300px;
+  overflow: auto;
+}
+.centered {
+  width: fit-content;
+  margin: auto;
 }
 #homeSongs + ul {
   background-color: rgba(var(--superLight-pastelLight-orange), 1);

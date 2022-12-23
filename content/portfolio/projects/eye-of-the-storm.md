@@ -1,6 +1,6 @@
 ---
 title: "Eye of the Storm"
-listag: "[ M C ]"
+listag: "-M-C"
 date: 2022-12-15T13:33:16-03:00
 draft: false
 keywords: "-, nicholas, sonvezzo, somvezzo, som-vezzo, -"

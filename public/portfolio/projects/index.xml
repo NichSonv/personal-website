@@ -1,32 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Som-Vezzo on SomVezzo</title>
-    <link>https://som-vezzo.me/</link>
-    <description>Recent content in Som-Vezzo on SomVezzo</description>
+    <title>Projetos on SomVezzo</title>
+    <link>https://som-vezzo.me/portfolio/projects/</link>
+    <description>Recent content in Projetos on SomVezzo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Wed, 25 Nov 2020 15:35:27 -0300</lastBuildDate><atom:link href="https://som-vezzo.me/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Gerador de nºs primos</title>
-      <link>https://som-vezzo.me/portfolio/programs/prime-number-gen/</link>
-      <pubDate>Fri, 23 Dec 2022 09:41:36 -0300</pubDate>
-      
-      <guid>https://som-vezzo.me/portfolio/programs/prime-number-gen/</guid>
-      <description>Gerador de números primos Essa é uma extensão que programei para o SuperCollider, se trata de um método de criação de listas, que preenche uma lista somente com números primos, e seus únicos dois argumentos são o tamanho da lista, e o número de partida.
-E essa aqui é a versão anterior, antes de eu descobrir que existia um método nativo que identifica se um número é primo ou não&amp;hellip;</description>
-    </item>
-    
-    <item>
-      <title>Espacializador circular</title>
-      <link>https://som-vezzo.me/portfolio/programs/orbitaz/</link>
-      <pubDate>Fri, 23 Dec 2022 09:20:56 -0300</pubDate>
-      
-      <guid>https://som-vezzo.me/portfolio/programs/orbitaz/</guid>
-      <description>OrbitAz - Extensão SuperCollider OrbitAz é uma pseudo-classe que criei como uma extensão à biblioteca de classes do SuperCollider. Sua principal função é trabalhar a espacialização de forma circular, algo que utilizei bastante em minhas composições, e por isso a necessidade de programar essa classe, para evitar ficar repetindo o mesmo pedaço de código em diversos lugares diferentes.
-OrbitAz.sc - A extensão em si OrbitAz.schelp - sua documentação </description>
-    </item>
-    
+    <lastBuildDate>Wed, 21 Dec 2022 15:27:19 -0300</lastBuildDate><atom:link href="https://som-vezzo.me/portfolio/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Atmosphere</title>
       <link>https://som-vezzo.me/portfolio/projects/atmosphere/</link>
@@ -35,16 +15,6 @@ OrbitAz.sc - A extensão em si OrbitAz.schelp - sua documentação </description
       <guid>https://som-vezzo.me/portfolio/projects/atmosphere/</guid>
       <description>Atmosphere Atmosphere Atmosphere é um ambiente de improvisação direcionada que utiliza o instrumento \drone como sua principal ferramenta. Em outras palavras, é uma composição musical que muda a cada performance, porém mantendo sua essência e principais características.
 Código completo aqui! (GitHub)</description>
-    </item>
-    
-    <item>
-      <title>Drone.scd</title>
-      <link>https://som-vezzo.me/portfolio/programs/drone/</link>
-      <pubDate>Sat, 17 Dec 2022 22:49:17 -0300</pubDate>
-      
-      <guid>https://som-vezzo.me/portfolio/programs/drone/</guid>
-      <description>Drone.scd - Instrumento virtual O instrumento virtual \drone se trata de um sintetizador que programei em SuperCollider (sclang), e que se aproveita do efeito acústico da seleção de harmônicos em um som complexo.
-O principal objeto em sua construção, e que é a base da sua sonoridade, é o Formant, e nada mais é que um oscilador de som complexo com um filtro embutido, cuja abertura de banda e frequência ressonante podem ser alterados.</description>
     </item>
     
     <item>

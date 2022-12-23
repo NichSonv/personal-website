@@ -1,7 +1,6 @@
 baseURL = "https://som-vezzo.me/"
 languageCode = "pt-br"
 title = "SomVezzo"
-subtitle = "Compositor • Programador"
 
 [markup.goldmark.renderer]
     unsafe = true

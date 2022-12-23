@@ -1,6 +1,6 @@
 ---
 title: "Projetos"
-listag: "[ M C I ]"
+listag: ""
 date: 2022-12-21T15:27:19-03:00
 draft: false
 keywords: ""

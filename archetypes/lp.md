@@ -10,10 +10,30 @@ videoURL: ""
 buttonURL: ""
 buttonTXT: ""
 ---
-<!-- Promessa e VVV -->
-<!-- Garantia e Bônus -->
-<!-- CTA -->
-<!-- Pra quem é -->
-<!-- O professor -->
-<!-- Sobre o método -->
-<!-- CTA -->
+<!--Promessa e VVV-->
+
+<!--CTA-->
+
+<!--Paleativos-->
+
+<!--Garantias-->
+
+<!--Sobre o suporte-->
+
+<!--Sobre o professor-->
+
+<!--Para quem é?-->
+
+<!--Lógica do método-->
+
+<!--Jeito certo x Jeito errado-->
+
+<!--Etapas/Níveis - Comparação do jeito certo x errado visualmente no método-->
+
+<!--Valor agregado e facilidade de implementação-->
+
+<!--Botão whats-->
+
+<!--CTA 2-->
+
+<!--rodapé-->

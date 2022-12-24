@@ -40,7 +40,7 @@ Para os respectivos sequenciadores, os botões verdes inicializam a sequência, 
 
 ### Interface página 3 - \drone
 
-{{< figure src="amagus3.png" link="amagus1.png" >}}
+{{< figure src="amagus3.png" link="amagus3.png" >}}
 
 {{< gist NichSonv "a7084ba76b8726f984920a4f5ffaec2e" "02_spectrumMidi.scd" >}}
 

@@ -5,13 +5,16 @@
         {{ block "css-link" . }}
             <link rel="stylesheet" href="/css/lpstyle.css">
         {{ end }}
-        {{ block "Tracking" . }}{{ end }}
+        {{ block "tracking" . }}{{ end }}
         {{ block "style" . }}{{ end }}
     </head>
-
     <body>
         {{ partial "tagBody.html" . }}
-        {{ block "body" . }}{{ end }}
+        <div class="row">
+            <div class="col-12">
+                {{ block "body" . }}{{ end }}
+            </div>
+        </div>
     </body>
 
 </html>

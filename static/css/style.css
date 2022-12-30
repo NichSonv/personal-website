@@ -191,6 +191,17 @@ li {
 strong {
   text-decoration: underline;
 }
+pre {
+  text-align: left;
+  margin: 0.3rem;
+  padding: 0.5rem;
+  overflow: auto;
+  border: 2px dotted rgba(var(--light-shiny-green), 1);
+}
+code {
+  color: rgba(var(--light-shiny-green), 1);
+  font-size: 1.1em;
+}
 .legenda {
   border: solid rgba(var(--light-gray), 1) 1px;
   padding: 0.2rem;

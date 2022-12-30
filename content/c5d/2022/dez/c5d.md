@@ -13,11 +13,11 @@ buttonTXT: ""
 ---
 <!-- Logo e Headlines -->
 
-{{< figure src="" >}}
+{{< figure src="c5d-logo" >}}
 
-# Se torne um compositor 5D
+# Torne-se um compositor nas 5 dimensões da criação!
 
-## Headline 2
+## sss
 
 <!--Promessa e VVV-->
 

@@ -8,4 +8,5 @@ hidden: false
 ---
 # Portfolio
 
-Aqui estão os meus melhores projetos em composição, programação, design...
+Aqui estão os meus melhores projetos em composição, programação, design...  
+Clique [aqui](https://github.com/NichSonv) para acessar o meu GitHub!

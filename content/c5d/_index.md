@@ -1,7 +1,7 @@
 ---
-title: "Cursos online"
+title: "Curso online Compositor 5D"
 date: 2021-10-17T23:24:57-03:00
-draft: false
+draft: true
 keywords: "-, nicholas, sonvezzo, -"
-hidden: false
+hidden: true
 ---

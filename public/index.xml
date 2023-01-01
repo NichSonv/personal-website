@@ -33,7 +33,8 @@ OrbitAz.sc - A extensão em si OrbitAz.schelp - sua documentação </description
       <pubDate>Fri, 23 Dec 2022 01:36:15 -0300</pubDate>
       
       <guid>https://som-vezzo.me/portfolio/projects/atmosphere/</guid>
-      <description>Atmosphere Atmosphere Atmosphere é um ambiente de improvisação direcionada que utiliza o instrumento \drone como sua principal ferramenta. Em outras palavras, é uma composição musical que muda a cada performance, porém mantendo sua essência e principais características.
+      <description>Atmosphere Ouça com fones de ouvido&amp;hellip;
+Atmosphere Atmosphere é um ambiente de improvisação direcionada que utiliza o instrumento \drone como sua principal ferramenta. Em outras palavras, é uma composição musical que muda a cada performance, porém mantendo sua essência e principais características.
 Código completo aqui! (GitHub)</description>
     </item>
     
@@ -43,8 +44,8 @@ Código completo aqui! (GitHub)</description>
       <pubDate>Sat, 17 Dec 2022 22:49:17 -0300</pubDate>
       
       <guid>https://som-vezzo.me/portfolio/programs/drone/</guid>
-      <description>Drone.scd - Instrumento virtual O instrumento virtual \drone se trata de um sintetizador que programei em SuperCollider (sclang), e que se aproveita do efeito acústico da seleção de harmônicos em um som complexo.
-O principal objeto em sua construção, e que é a base da sua sonoridade, é o Formant, e nada mais é que um oscilador de som complexo com um filtro embutido, cuja abertura de banda e frequência ressonante podem ser alterados.</description>
+      <description>Drone.scd - Instrumento virtual O instrumento virtual \drone se trata de um sintetizador que programei em SuperCollider (sclang), e que se aproveita do efeito acústico das formantes, ou frequências de ressonância - simplificadamente, a ênfase de algum harmônico dentro de um som complexo.
+A principal classe em sua construção, e que é a base da sua sonoridade, é a Formant.ar, que como o nome sugere, cria esse som complexo onde é possível definir a formante, e também o tamanho da banda de ressonância.</description>
     </item>
     
     <item>

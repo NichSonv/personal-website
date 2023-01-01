@@ -75,8 +75,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <h1 id="dronescd---instrumento-virtual">Drone.scd - Instrumento virtual</h1>
 <script type="application/javascript" src="https://gist.github.com/NichSonv/1d0501e682b0f6be6268408d43cf48da.js?file=drone.scd"></script>
 
-<p>O instrumento virtual \drone se trata de um sintetizador que programei em SuperCollider (<em>sclang</em>), e que se aproveita do efeito acústico da seleção de harmônicos em um som complexo.<br>
-O principal objeto em sua construção, e que é a base da sua sonoridade, é o <em>Formant</em>, e nada mais é que um oscilador de som complexo com um filtro embutido, cuja abertura de banda e frequência ressonante podem ser alterados. O instrumento utiliza esse oscilador em conjunto com um reverb e controle de espacialização, e aí está criada a sua sonoridade característica.</p>
+<p>O instrumento virtual <code>\drone</code> se trata de um sintetizador que programei em SuperCollider (<em>sclang</em>), e que se aproveita do efeito acústico das <em>formantes</em>, ou frequências de ressonância - simplificadamente, a ênfase de algum harmônico dentro de um som complexo.<br>
+A principal classe em sua construção, e que é a base da sua sonoridade, é a <code>Formant.ar</code>, que como o nome sugere, cria esse som complexo onde é possível definir a <em>formante</em>, e também o tamanho da banda de ressonância. O instrumento utiliza esse oscilador em conjunto com um reverb e controle de espacialização, e aí está criada a sua sonoridade característica.</p>
+<pre tabindex="0"><code class="language-sclang" data-lang="sclang">SynthDef(\drone, {
+    | sig env | // argumentos
+    env = Env.asr.kr(2, \gate.kr(1)); // envelope para a duração do som (asr = Attack Sustain Release)
+    sig = Formant.ar(\fundamental.kr(200), \formante.kr(800), \banda.kr(1000), env); // oscilador base do instrumento
+    sig = Pan2.ar(sig, \pan.kr(0)); // espacializador
+    sig = FreeVerb.ar(sig, \mix.kr, \room.kr, \damp.kr); // reverb (normalmente adicionado de forma externa ao instrumento)
+    Out.ar(0, sig) // canal de saída do som para a placa de áudio
+}).add;
+</code></pre><p>O instrumento normalmente é utilizado com a ajuda de uma interface digital, que também criei especificamente para ele, através do programa <em>TouchOSC</em>, abaixo a imagem de uma das versões dessa interface, desenhada para uso em um iPad.</p>
+<figure><a href="drone-controls1.png"><img src="drone-controls1.png"/></a>
+</figure>
+
+<p>A comunicação do aparelho ao SuperCollider foi em OSC nas primeiras versões, dentro de uma rede wifi fechada apenas para os aparelhos envolvidos na performance, e mais recentemente em MIDI, pela vantagem da comunicação poder ser feita através de um cabo USB, com isso diminuindo a possibilidade de <em>lag</em>.</p>
 <p>Abaixo um exemplo do instrumento em prática, em uma versão da obra <a href="https://som-vezzo.me/portfolio/projects/atmosphere/">Atmosphere</a> (ouça com fones de ouvido para uma melhor experiência):</p>
 <div class="scThumb">
 <iframe scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1036050955&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
@@ -133,8 +146,8 @@ Atmosphere</a></div>
                         <h5>Contato</h5>
                         <ul>
                             <li><a href="https://www.linkedin.com/in/som-vezzo/" target="_blank" title="Página no LinkedIn">Linkedin</a></li>
+                            <li><a href="https://github.com/NichSonv" target="_blank" title="NichSonv's Github">GitHub</a></li>
                             <li><a href="mailto:nicholas@som-vezzo.me">nicholas@som-vezzo.me</a></li>
-                            <li><a href="https://wa.me/5519997847574">(19) 99784-7574</a><img src="/whatsIcon.png" style="width: auto; height: 1em;"></li>
                         </ul>
                     </nav>
                 </div>

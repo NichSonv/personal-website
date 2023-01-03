@@ -8,6 +8,17 @@
     <language>pt-br</language>
     <lastBuildDate>Wed, 25 Nov 2020 15:35:27 -0300</lastBuildDate><atom:link href="https://som-vezzo.me/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Osc Music Player</title>
+      <link>https://som-vezzo.me/portfolio/programs/osc-music-player/</link>
+      <pubDate>Sat, 24 Dec 2022 18:58:55 -0300</pubDate>
+      
+      <guid>https://som-vezzo.me/portfolio/programs/osc-music-player/</guid>
+      <description>OscMusic player Esse é um trabalho em andamento.
+O OscMusic player se trata de uma interface e instrumento virtual, para se criar &amp;ldquo;música de osciloscópio&amp;rdquo; (em inglês, oscilloscope music).
+SynthDef(\xyzSin, { var sig, env, hz; env = Env.asr(0.1, 1, 0.2).kr(2, \gate.kr(1)); sig = SinOsc.ar(\freq.kr(~hzs[0]), [\ph0.kr(~ph0[0]), \ph1.kr(~ph1[0])], env); sig = Pan2.ar(sig, [\pan0.kr(~pan0[0]), \pan1.kr(~pan1[0])], \amp.kr(~amps[0])); Out.ar(\out.kr(0), sig) }).add; Código completo.</description>
+    </item>
+    
+    <item>
       <title>Gerador de nºs primos</title>
       <link>https://som-vezzo.me/portfolio/programs/prime-number-gen/</link>
       <pubDate>Fri, 23 Dec 2022 09:41:36 -0300</pubDate>
@@ -23,8 +34,9 @@ E essa aqui é a versão anterior, antes de eu descobrir que existia um método 
       <pubDate>Fri, 23 Dec 2022 09:20:56 -0300</pubDate>
       
       <guid>https://som-vezzo.me/portfolio/programs/orbitaz/</guid>
-      <description>OrbitAz - Extensão SuperCollider OrbitAz é uma pseudo-classe que criei como uma extensão à biblioteca de classes do SuperCollider. Sua principal função é trabalhar a espacialização de forma circular, algo que utilizei bastante em minhas composições, e por isso a necessidade de programar essa classe, para evitar ficar repetindo o mesmo pedaço de código em diversos lugares diferentes.
-OrbitAz.sc - A extensão em si OrbitAz.schelp - sua documentação </description>
+      <description>orbitAz.sc - Espacializador circular OrbitAz é uma extensão que criei à biblioteca de classes do SuperCollider. Se trata de uma pseudo-classe, e sua principal função é trabalhar a espacialização de forma circular (especialmente perceptível em instalações sonoras com 3+ canais/amplificadores, em que o ouvinte consegue perceber nitidamente o som circulando ao redor).
+É uma funcionalidade que utilizei muitas vezes em minhas performances, especialmente com o instrumento drone.
+A extensão e sua documentação Pode-se observar no código que o efeito é resultado da junção do espacializador multicanal padrão - PanAz - com um envelope circular - Env.</description>
     </item>
     
     <item>

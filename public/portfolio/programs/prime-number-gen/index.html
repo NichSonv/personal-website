@@ -19,11 +19,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="icon" href="/favicon.svg">
 <link rel="mask-icon" href="/favicon.svg">
 
+
 <link rel="preconnect" href="https://fonts.googleapis.com"> 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Fira+Code:wght@300;400;500;600;700&family=Share+Tech+Mono&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/4057f09e79.js" crossorigin="anonymous"></script>
 
         
@@ -79,7 +78,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <p>E essa aqui é a versão anterior, antes de eu descobrir que existia um método nativo que identifica se um número é primo ou não&hellip;</p>
 <script type="application/javascript" src="https://gist.github.com/NichSonv/588686251461f040d9ee985a5932afe1.js?file=01_Prime-number-gen-V1.scd"></script>
 
+<p>Basicamente, o algoritmo cria uma lista de <code>nil</code>&rsquo;s, de acordo com o <code>size</code> determinado, depois roda um loop <code>while</code> para cada elemento, em ordem crescente de <em>index</em>, adicionando os números primos em ordem crescente a partir do <code>start</code>.<br>
+Para saber se é primo ou não, o algoritmo checa cada número inteiro, em sequência, desde <code>start</code>, utilizando o método nativo <code>.isPrime</code>, que retorna um <em>bool</em> <code>true</code> ou <code>false</code>.</p>
+<p>No segundo caso, que não utiliza o método <code>.isPrime</code>, o algoritmo divide o inteiro que está conferindo por todos os inteiros, de 1 até o atual, e guarda todos os resultados (agora <em>floats</em>) em uma segunda lista, temporária, onde depois vai transformá-los em <em>strings</em>, separar tudo que está à esquerda do &ldquo;.&rdquo; com o que está à direita (decimais) - o que vai tornar cada string em uma sub-lista de dois strings -, e então, ele busca dentre todos os strings resultantes os que são <code>&quot;0&quot;</code>, e para cada um que encontra, soma à um contador. Se esse contador no final resultar num total de <code>2</code>, significa que o número é primo, pois só foi dividido exatamente por 1 e por ele mesmo.</p>
+<pre tabindex="0"><code class="language-sclang" data-lang="sclang">// Divide o inteiro por todos os inteiros de 1 até ele, e salva na lista &#39;temp&#39;.
+temp = count/(1..count);
 
+// Transforma todos os floats em strings e os divide em dois elementos, apagando o &#39;.&#39;
+temp = temp.collect{
+	| n |
+	n = n.asString;
+	n.split($.);
+};
+
+// Confere a nova lista em busca de &#34;0&#34;s, e adiciona ao contador
+temp.deepCollect(2) {
+	| n |
+	if(n==&#34;0&#34;) {check = check + 1; check.postln}
+};
+
+// Confere se é primo ou não
+if(check==2) {prime=true}
+</code></pre>
     </main>
     <nav class="col-3">
         <div class="legenda">
@@ -94,6 +114,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </em>
 </div>
         <ul id="portfolio-list">
+            
+                <li><a href="https://som-vezzo.me/portfolio/programs/osc-music-player/">Osc Music Player -C-M-I-WIP</a></li>
             
                 <li><a href="https://som-vezzo.me/portfolio/programs/prime-number-gen/">Gerador de nºs primos -C</a></li>
             

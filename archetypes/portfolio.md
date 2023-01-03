@@ -7,4 +7,4 @@ keywords: ""
 weight: 0
 hidden: false
 ---
-# {{ replace .Name "-" " " | title }}
+# {{< param title >}}

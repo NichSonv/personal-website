@@ -9,4 +9,4 @@ hidden: false
 # Portfolio
 
 Aqui estão os meus melhores projetos em composição, programação, design...  
-Clique [aqui](https://github.com/NichSonv) para acessar o meu GitHub!
+[Clique aqui para acessar o meu GitHub!](https://github.com/NichSonv)

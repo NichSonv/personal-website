@@ -19,11 +19,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="icon" href="/favicon.svg">
 <link rel="mask-icon" href="/favicon.svg">
 
+
 <link rel="preconnect" href="https://fonts.googleapis.com"> 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Fira+Code:wght@300;400;500;600;700&family=Share+Tech+Mono&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/4057f09e79.js" crossorigin="anonymous"></script>
 
         
@@ -72,14 +71,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="row">
             
     <main class="col-9">
-        <h1 id="orbitaz---extensão-supercollider">OrbitAz - Extensão SuperCollider</h1>
-<p>OrbitAz é uma pseudo-classe que criei como uma extensão à biblioteca de classes do SuperCollider. Sua principal função é trabalhar a espacialização de forma circular, algo que utilizei bastante em minhas composições, e por isso a necessidade de programar essa classe, para evitar ficar repetindo o mesmo pedaço de código em diversos lugares diferentes.</p>
-<h3 id="orbitazsc---a-extensão-em-si">OrbitAz.sc - A extensão em si</h3>
+        <h1 id="orbitazsc---espacializador-circular">orbitAz.sc - Espacializador circular</h1>
+<p>OrbitAz é uma extensão que criei à biblioteca de classes do SuperCollider. Se trata de uma <em>pseudo-classe</em>, e sua principal função é trabalhar a espacialização de forma circular (especialmente perceptível em instalações sonoras com 3+ canais/amplificadores, em que o ouvinte consegue perceber nitidamente o som circulando ao redor).<br>
+É uma funcionalidade que utilizei muitas vezes em minhas performances, especialmente com o instrumento <a href="https://som-vezzo.me/portfolio/programs/drone/">drone</a>.</p>
+<h2 id="a-extensão-e-sua-documentação">A extensão e sua documentação</h2>
 <script type="application/javascript" src="https://gist.github.com/NichSonv/5ac344624ae85666962234f4656337ae.js?file=orbitAz.sc"></script>
 
-<h3 id="orbitazschelp---sua-documentação">OrbitAz.schelp - sua documentação</h3>
 <script type="application/javascript" src="https://gist.github.com/NichSonv/5ac344624ae85666962234f4656337ae.js?file=orbitAz.schelp"></script>
 
+<p>Pode-se observar no código que o efeito é resultado da junção do espacializador multicanal padrão - <code>PanAz</code> - com um envelope circular - <code>Env.circle</code>.<br>
+O argumento principal em questão é o &lsquo;pan&rsquo;, do espacializador, e que controla a posição do som no espaço. A esse argumento é alimentado o envelope, que basicamente estará enviando um constante fluxo de dados entre &lsquo;min&rsquo; e &lsquo;max&rsquo;. Simplificadamente, o usuário define valores para</p>
+<ul>
+<li>o número de canais utilizados (<code>numChans</code>);</li>
+<li>de &ldquo;voltas&rdquo; que o som vai dar (<code>cycles</code>);</li>
+<li>de quanto tempo em segundos cada volta vai durar (<code>time</code>);</li>
+<li>qual direção inicial o som vai girar (<code>dir</code>); e</li>
+<li>de qual ponto no espaço o som vai partir (<code>start</code>).</li>
+</ul>
 
     </main>
     <nav class="col-3">
@@ -95,6 +103,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </em>
 </div>
         <ul id="portfolio-list">
+            
+                <li><a href="https://som-vezzo.me/portfolio/programs/osc-music-player/">Osc Music Player -C-M-I-WIP</a></li>
             
                 <li><a href="https://som-vezzo.me/portfolio/programs/prime-number-gen/">Gerador de nºs primos -C</a></li>
             

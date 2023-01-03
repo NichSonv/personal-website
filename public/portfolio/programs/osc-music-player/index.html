@@ -8,12 +8,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-P2G3MR5');</script>
 
-<title>Âmagus</title>
+<title>Osc Music Player</title>
 <meta name="facebook-domain-verification" content="60bp91n0okgntl423yz9ld00gbpb8w" />
 <meta charset="utf-8">
 <meta name="author" content="Nicholas Sonvezzo">
 <meta name="description" content="Nicholas Sonvezzo, compositor e programador">
-<meta name="keywords" content="[-, nicholas, sonvezzo, somvezzo, som-vezzo, -]">
+<meta name="keywords" content="[]">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Hugo 0.108.0">
 <link rel="icon" href="/favicon.svg">
@@ -71,61 +71,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="row">
             
     <main class="col-9">
-        <h1 id="âmagus">Âmagus</h1>
-<h2 id="o-que-é">O que é?</h2>
-<div class="yt-video">
-    <div>
-        <iframe src="https://youtube.com/embed/Ey08N9ciDtE" title="amagus" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-        </iframe>
-    </div>
-</div>
-<p>Âmagus foi o meu TCC de bacharelado em composição musical na Unicamp.<br>
-Se trata de uma peça autoral <em>live-eletronics</em> (isto é, uma música que mistura sons acústicos com processos em um computador, como processamento de áudio, síntese sonora, execução de funções, código&hellip;). É um ambiente de improvisação e processos estocásticos que seguem certas diretrizes, programado em <em>sclang</em>, no SuperCollider.</p>
-<h2 id="interface-e-programação">Interface e programação</h2>
-<p>Essa foi a interface que criei para a execução da peça. Todo o design, comportamento dos botões, páginas etc, foi feito através do programa <em>TouchOSC</em>, e todo o código que programa as ações dos mesmos, foi escrito em <em>sclang</em>, no <em>SuperCollider</em>, que também é onde tudo é processado.</p>
-<h3 id="interface-página-1---globais">Interface página 1 - Globais</h3>
-<figure><a href="amagus1.png"><img src="amagus1.png"/></a>
-</figure>
+        <h1 id="oscmusic-player">OscMusic player</h1>
+<p><strong>Esse é um trabalho em andamento.</strong></p>
+<p>O <em>OscMusic player</em> se trata de uma interface e instrumento virtual, para se criar &ldquo;música de osciloscópio&rdquo; (em inglês, <em>oscilloscope music</em>).</p>
+<pre tabindex="0"><code class="language-sclang" data-lang="sclang">SynthDef(\xyzSin, {
+	var sig, env, hz;
+	env = Env.asr(0.1, 1, 0.2).kr(2, \gate.kr(1));
+	sig = SinOsc.ar(\freq.kr(~hzs[0]), [\ph0.kr(~ph0[0]), \ph1.kr(~ph1[0])], env);
+	sig = Pan2.ar(sig, [\pan0.kr(~pan0[0]), \pan1.kr(~pan1[0])], \amp.kr(~amps[0]));
+	Out.ar(\out.kr(0), sig)
+}).add;
+</code></pre><p><a href="https://github.com/NichSonv/osc-music-interface">Código completo</a>.</p>
 
-<script type="application/javascript" src="https://gist.github.com/NichSonv/a7084ba76b8726f984920a4f5ffaec2e.js?file=00_midiGlobals.scd"></script>
-
-<p>A primeira página possui cinco botões, cada um correspondente a um <em>movimento</em> da peça, ou, na programação, uma função pré-definida. Apertar um botão significa encerrar os processos da função anterior, preparar o ambiente e iniciar os processos da nova função (movimento).<br>
-Além dos cinco botões principais, há um sexto, pequeno, para a eventual necessidade de desligar todos os processos, em uma emergência. O famoso &ldquo;botão do pânico&rdquo;.</p>
-<h3 id="interface-página-2---sequenciadores">Interface página 2 - Sequenciadores</h3>
-<figure><a href="amagus2.png"><img src="amagus2.png"/></a>
-</figure>
-
-<script type="application/javascript" src="https://gist.github.com/NichSonv/a7084ba76b8726f984920a4f5ffaec2e.js?file=01_primalsMidi.scd"></script>
-
-<p>A segunda página consiste em uma matrix/tabela 7x3, onde cada coluna corresponde à um sequenciador, e cada fileira, enfatizada pelas cores, uma ação àquele sequenciador. Cada sequenciador, do 1 ao 7, aumenta em quantidade o número de sons por segundo, e todos distribuem o tempo entre cada som (silêncio) de forma aleatória, o que gera sempre um ritmo diferente a cada iteração.<br>
-Para os respectivos sequenciadores, os botões verdes inicializam a sequência, os azuis re-iteram a aleatoriedade dos silêncios, e os vermelhos encerram a sequência.</p>
-<h3 id="interface-página-3---drone">Interface página 3 - \drone</h3>
-<figure><a href="amagus3.png"><img src="amagus3.png"/></a>
-</figure>
-
-<script type="application/javascript" src="https://gist.github.com/NichSonv/a7084ba76b8726f984920a4f5ffaec2e.js?file=02_spectrumMidi.scd"></script>
-
-<p>A página três contêm uma versão reduzida e atualizada dos controles para o instrumento virtual <em><a href="https://som-vezzo.me/portfolio/programs/drone/">Drone</a></em>, possibilitando até três instâncias simultâneas do instrumento, com controles separados de espacialização, volume, reverb, delay, tremolo, on/off, e o mais importante, controles X/Y para controlar o timbre e formante principal do instrumento, que são suas características mais essenciais.</p>
-<h2 id="sobre-a-peça-e-execução">Sobre a peça e execução</h2>
-<p>A poética por detrás da composição na verdade é muito simples, foi uma junção das principais vertentes com as quais gosto de trabalhar dentro da área musical, e isso pode ser observado nos cinco movimentos da peça:</p>
-<ol>
-<li><em>&ldquo;Etherium&rdquo;</em> - Música coral / Música sacra;</li>
-<li><em>&ldquo;Anima&rdquo;</em> - Violão e sons acústicos;</li>
-<li><em>&ldquo;Primals&rdquo;</em> - Síntese sonora e sequenciadores;</li>
-<li><em>&ldquo;Memoria&rdquo;</em> - Processos eletroacústicos e processamento de áudio;</li>
-<li><em>&ldquo;Spectrum&rdquo;</em> - Música meditativa.</li>
-</ol>
-<p class="centered"><strong>
-Você pode analisar o código completo clicando <a target="_blank" href="https://github.com/NichSonv/compositions/blob/abd53d6ad0e959b7159114f08dc05bce09b3e79d/amagus.scd">aqui</a>
-</strong></p>
-<!-- 
-planejamento conteúdo:
-- Resumo do que é 
-- Interface e programação
-- Sobre a peça - poética e execução
--->
     </main>
     <nav class="col-3">
         <div class="legenda">
@@ -141,15 +98,15 @@ planejamento conteúdo:
 </div>
         <ul id="portfolio-list">
             
-                <li><a href="https://som-vezzo.me/portfolio/projects/atmosphere/">Atmosphere -M-C-I</a></li>
+                <li><a href="https://som-vezzo.me/portfolio/programs/osc-music-player/">Osc Music Player -C-M-I-WIP</a></li>
             
-                <li><a href="https://som-vezzo.me/portfolio/projects/eye-of-the-storm/">Eye of the Storm -M-C</a></li>
+                <li><a href="https://som-vezzo.me/portfolio/programs/prime-number-gen/">Gerador de nºs primos -C</a></li>
             
-                <li><a href="https://som-vezzo.me/portfolio/projects/estrada-perdicao/">Estrada da Perdição -M-C</a></li>
+                <li><a href="https://som-vezzo.me/portfolio/programs/orbitaz/">Espacializador circular -C</a></li>
             
-                <li><a href="https://som-vezzo.me/portfolio/projects/amagus/">Âmagus -M-C-I</a></li>
+                <li><a href="https://som-vezzo.me/portfolio/programs/drone/">Drone.scd -C-I</a></li>
             
-            <li><a href="https://som-vezzo.me/portfolio/projects/">Voltar para Projetos</a></li>
+            <li><a href="https://som-vezzo.me/portfolio/programs/">Voltar para Programas</a></li>
         </ul>
     </nav>
 

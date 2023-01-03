@@ -29,6 +29,8 @@ O instrumento normalmente é utilizado com a ajuda de uma interface digital, que
 
 {{< figure src="drone-controls1.png" link="drone-controls1.png" >}}
 
+Talvez possa parecer complicado, mas isso é só pelo fato dessa interface, em particular, permitir seis instâncias do instrumento ao mesmo tempo. Basicamente, possui controles de ON/OFF, volume, frequência, espacialização, reverb, abertura de banda, formante e a opção de salvar ou carregar as mais diversas combinações dessas configurações.
+
 A comunicação do aparelho ao SuperCollider foi em OSC nas primeiras versões, dentro de uma rede wifi fechada apenas para os aparelhos envolvidos na performance, e mais recentemente em MIDI, pela vantagem da comunicação poder ser feita através de um cabo USB, com isso diminuindo a possibilidade de _lag_.
 
 Abaixo um exemplo do instrumento em prática, em uma versão da obra [Atmosphere]({{< ref "atmosphere.md" >}}) (ouça com fones de ouvido para uma melhor experiência):

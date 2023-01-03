@@ -8,3 +8,5 @@ weight: 0
 hidden: false
 ---
 # Programas
+
+Instrumentos virtuais, interfaces, algoritmos etc...

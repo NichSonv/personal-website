@@ -197,10 +197,17 @@ pre {
   padding: 0.5rem;
   overflow: auto;
   border: 2px dotted rgba(var(--light-shiny-green), 1);
+  border-radius: 1%;
+  box-shadow: 1px 5px 8px rgba(var(--black), 0.9), -1px 5px 8px rgba(var(--superDark-deep-purple), 1);
+  background-color: rgba(var(--superDark-deep-green), 0.7);
+}
+pre code {
+  color: rgba(var(--superLight-pastelLight-green), 1);
 }
 code {
   color: rgba(var(--light-shiny-green), 1);
-  font-size: 1.1em;
+  font-size: 0.9em;
+  font-family: 'Ubuntu Mono', 'Courier New', Courier, monospace;
 }
 .legenda {
   border: solid rgba(var(--light-gray), 1) 1px;

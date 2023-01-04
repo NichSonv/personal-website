@@ -45,9 +45,9 @@ A extensão e sua documentação Pode-se observar no código que o efeito é res
       <pubDate>Fri, 23 Dec 2022 01:36:15 -0300</pubDate>
       
       <guid>https://som-vezzo.me/portfolio/projects/atmosphere/</guid>
-      <description>Atmosphere Ouça com fones de ouvido&amp;hellip;
-Atmosphere Atmosphere é um ambiente de improvisação direcionada que utiliza o instrumento \drone como sua principal ferramenta. Em outras palavras, é uma composição musical que muda a cada performance, porém mantendo sua essência e principais características.
-Código completo aqui! (GitHub)</description>
+      <description>Atmosphere Atmosphere é um ambiente de improvisação direcionada, isto é, uma performance de improviso livre que segue certas diretrizes. Isso significa que é uma performance sempre em evolução/mudança, nunca é tocada exatamente igual.
+A essência da obra é o instrumento virtual \drone, que possui uma sonoridade e características muito particulares (mais sobre isso na página sobre o instrumento), e que em muito moldam as diretrizes de Atmosphere.
+A programação da obra é toda feita em sclang, dentro do SuperCollider, e é basicamente a definição do instrumento, em si, e a configuração das conexões entre os parâmetros que o controlam e os controles da interface digital, feita em TouchOSC.</description>
     </item>
     
     <item>

@@ -359,7 +359,7 @@ footer hr {
   width: fit-content;
 }
 
-@media only screen and (min-width: 500px) { /* TABLETS =================== */
+@media only screen and (min-width: 700px) { /* TABLETS =================== */
   .col-s-1 {width: 8.33%;}
   .col-s-2 {width: 16.66%;}
   .col-s-3 {width: 25%;}
@@ -450,9 +450,17 @@ footer hr {
   footer hr {
     opacity: 0;
   }
+  .left, .left ul {
+    text-align: right;
+    margin-right: 0;
+  }
+  .right, .right ul {
+    text-align: left;
+    margin-left: 0;
+  }
 }
 
-@media screen and (min-width: 800px) { /* DESKTOP =========================== */
+@media screen and (min-width: 1200px) { /* DESKTOP =========================== */
   .col-1 {width: 8.33%;}
   .col-2 {width: 16.66%;}
   .col-3 {width: 25%;}
@@ -523,14 +531,6 @@ footer hr {
   }
 
   /* Page lower */
-  .left, .left ul {
-    text-align: right;
-    margin-right: 0;
-  }
-  .right, .right ul {
-    text-align: left;
-    margin-left: 0;
-  }
 
 }
 

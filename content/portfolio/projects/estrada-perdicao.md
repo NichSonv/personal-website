@@ -7,7 +7,7 @@ keywords: "-, nicholas, sonvezzo, somvezzo, som-vezzo, -"
 weight: 0
 hidden: false
 ---
-# Estrada da perdição - trilha alternativa
+# Estrada da perdição - trilha sonora alternativa
 
 {{< video src="https://www.youtube.com/embed/0zHeQUwLizI" title="estrada perdição" >}}
 

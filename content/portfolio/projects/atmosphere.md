@@ -10,7 +10,7 @@ hidden: false
 # Atmosphere
 
 Atmosphere é um ambiente de improvisação direcionada, isto é, uma performance de improviso livre que segue certas diretrizes. Isso significa que é uma performance sempre em evolução/mudança, nunca é tocada exatamente igual.  
-A essência da obra é o instrumento virtual [`\drone`]({{< ref "drone.md" >}}), que possui uma sonoridade e características muito particulares (mais sobre isso na página sobre o instrumento), e que em muito moldam as diretrizes de _Atmosphere_.
+A essência da obra é o instrumento virtual `\drone`, que possui uma sonoridade e características muito particulares (mais sobre isso na [página sobre o instrumento]({{< ref "drone.md" >}})), e que em muito moldam as diretrizes de _Atmosphere_.
 
 A programação da obra é toda feita em `sclang`, dentro do SuperCollider, e é basicamente a definição do instrumento, em si, e a configuração das conexões entre os parâmetros que o controlam e os controles da interface digital, feita em TouchOSC.
 

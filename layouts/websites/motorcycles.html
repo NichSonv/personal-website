@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>{{ .Title }}</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Nicholas Sonvezzo">
+    <meta name="description" content="Custom Dreams - website example">
+    <meta name="keywords" content="{{ .Keywords }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{ hugo.Generator }}
+    <link rel="icon" href="/favicon.svg">
+    <link rel="mask-icon" href="/favicon.svg">
+    <!--Fonts-->
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="/css/customDreams.css">
+    </head>
+
+    <body>
+        <header class="row">
+            <div class="col-3">
+                <img src="" alt=""> <!--Logo--> this is an image
+            </div>
+            <div class="col-9">
+                <span class="row title">
+                    Custom Dreams
+                </span>
+                <nav class="row">
+                    <ul>
+                        <li><a href="{{ ref . "motorcycles" }}">Loja</a></li>
+                        <li><a href="{{ ref . "blog" }}">Blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="row">
+            <div class="col-3">
+                sublinks
+            </div>
+            <div class="col-9">
+                {{ .Content }}
+            </div>
+        </main>
+        <footer class="row">
+            <hr>
+            <div class="col-6 left">
+                <h5>Quem somos</h5>
+                <ul>
+                    <li>Custom Dreams - CNPJ 12.345.678/0001-99</li>
+                    <li>Rua da Picaíba, 99, Praça do motoqueiro<br>Jordanésia, SP, Brazil</li>
+                </ul>
+            </div>
+            <div class="col-6 right">
+                <h5>Contato</h5>
+                <ul>
+                    <li><a href="#">(19) 1234-1234</a></li>
+                    <li><a href="#">custom@dreams.bike</a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>

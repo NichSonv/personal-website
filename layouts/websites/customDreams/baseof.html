@@ -12,34 +12,28 @@
     <link rel="mask-icon" href="/favicon.svg">
     <!--Fonts-->
     <!--Stylesheet-->
-    <link rel="stylesheet" href="/css/customDreams.css">
+    <link rel="stylesheet" href="/css/websites/customDreams/customDreams.css">
     </head>
 
     <body>
         <header class="row">
-            <div class="col-3">
-                <img src="" alt=""> <!--Logo--> this is an image
-            </div>
-            <div class="col-9">
-                <span class="row title">
+            <div class="col-12">
+                <figure id="logo">
+                    <img src="/css/websites/customDreams/harley-logo-vector-3.jpg" alt="">
+                </figure>
+                <span id="title">
                     Custom Dreams
                 </span>
-                <nav class="row">
+                <nav id="main-nav">
                     <ul>
                         <li><a href="{{ ref . "motorcycles" }}">Loja</a></li>
                         <li><a href="{{ ref . "blog" }}">Blog</a></li>
+                        <li><a href="{{ ref . "garage" }}">Garage</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
-        <main class="row">
-            <div class="col-3">
-                sublinks
-            </div>
-            <div class="col-9">
-                {{ .Content }}
-            </div>
-        </main>
+        {{ block "main" . }}{{ end }}
         <footer class="row">
             <hr>
             <div class="col-6 left">
@@ -56,6 +50,7 @@
                     <li><a href="#">custom@dreams.bike</a></li>
                 </ul>
             </div>
+            <p id="credit">Site designed by Nicholas Sonvezzo<br><a href="..">Back to "Websites"</a></p>
         </footer>
     </body>
 </html>

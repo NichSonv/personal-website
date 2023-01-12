@@ -6,10 +6,9 @@ draft: true
 keywords: "custom, motorcycle, bikes, dreams"
 weight: 0
 hidden: false
-type: "websites"
-layout: "motorcycles"
+type: "websites/customDreams"
 ---
-# {{< param title >}}
+# Choose your ride
 
 <!--
 Planning...

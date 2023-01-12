@@ -6,7 +6,7 @@ draft: true
 keywords: ""
 weight: 0
 hidden: false
-type: "websites"
+type: "websites/customDreams"
 ---
 # {{< param title >}}
 

@@ -4,8 +4,14 @@
 /* MOBILE ========================= */
 
 /* Whole page */
-html {}
-body {}
+html {
+    padding: 0;
+}
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+}
 * {
     box-sizing: border-box;
     border: solid 1px limegreen;
@@ -29,6 +35,10 @@ header {
     font-size: 12vw;
     margin: 1rem auto;
     font-weight: bold;
+    a {
+        text-decoration: none;
+        color: white;
+    }
 }
 #main-nav ul {
     font-size: 1.5em;
@@ -43,7 +53,7 @@ header {
         }
     }
 }
-#logo {
+figure {
     width: 100%;
     height: auto;
     margin: 0;
@@ -52,9 +62,17 @@ header {
     }
 }
 
+p, ul {
+    font-size: 1.2em;
+}
+a {
+    color: lightgreen;
+}
+
 footer {
     #credit {
         color: gray;
+        text-align: center;
     }
 }
 

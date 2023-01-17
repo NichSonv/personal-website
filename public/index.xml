@@ -8,6 +8,34 @@
     <language>pt-br</language>
     <lastBuildDate>Wed, 25 Nov 2020 15:35:27 -0300</lastBuildDate><atom:link href="https://som-vezzo.me/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Bikes</title>
+      <link>https://som-vezzo.me/portfolio/websites/motorcycles/bikes/</link>
+      <pubDate>Mon, 16 Jan 2023 16:26:07 -0300</pubDate>
+      
+      <guid>https://som-vezzo.me/portfolio/websites/motorcycles/bikes/</guid>
+      <description>Shop WIP
+Boulevard Dragstar Fat Boy Intruder Midnight Sportster </description>
+    </item>
+    
+    <item>
+      <title>Motorcycles.garage</title>
+      <link>https://som-vezzo.me/portfolio/websites/motorcycles/garage/</link>
+      <pubDate>Thu, 12 Jan 2023 19:04:13 -0300</pubDate>
+      
+      <guid>https://som-vezzo.me/portfolio/websites/motorcycles/garage/</guid>
+      <description>This is our garage</description>
+    </item>
+    
+    <item>
+      <title>Blog</title>
+      <link>https://som-vezzo.me/portfolio/websites/motorcycles/blog/</link>
+      <pubDate>Fri, 06 Jan 2023 15:30:17 -0300</pubDate>
+      
+      <guid>https://som-vezzo.me/portfolio/websites/motorcycles/blog/</guid>
+      <description>Blog Esse é o nosso blog</description>
+    </item>
+    
+    <item>
       <title>Osc Music Player</title>
       <link>https://som-vezzo.me/portfolio/programs/osc-music-player/</link>
       <pubDate>Sat, 24 Dec 2022 18:58:55 -0300</pubDate>
@@ -61,21 +89,12 @@ A principal classe em sua construção, e que é a base da sua sonoridade, é a 
     </item>
     
     <item>
-      <title>Eye of the Storm</title>
-      <link>https://som-vezzo.me/portfolio/projects/eye-of-the-storm/</link>
-      <pubDate>Thu, 15 Dec 2022 13:33:16 -0300</pubDate>
-      
-      <guid>https://som-vezzo.me/portfolio/projects/eye-of-the-storm/</guid>
-      <description>Eye of the Storm - trilha alternativa Mais um exercício de criação de trilha sonora da minha época de faculdade. A maior parte dos sons, ritmos, sequência de eventos e gravação foram feitos dentro e pelo SuperCollider, com exceção de sons mais concretos (raios, estalos do navio&amp;hellip;).</description>
-    </item>
-    
-    <item>
       <title>Estrada da Perdição</title>
       <link>https://som-vezzo.me/portfolio/projects/estrada-perdicao/</link>
       <pubDate>Thu, 15 Dec 2022 13:33:02 -0300</pubDate>
       
       <guid>https://som-vezzo.me/portfolio/projects/estrada-perdicao/</guid>
-      <description>Estrada da perdição - trilha alternativa Esse projeto foi um dos exercícios com trilha sonora durante a minha graduação na Unicamp, em que o objetivo era de criar um novo conveito sonoro/musical para a cena, exercitando desde a concepção e poética até o trabalho de produção e pós-produção musical.</description>
+      <description>Estrada da perdição - trilha sonora alternativa Esse projeto foi um dos exercícios com trilha sonora durante a minha graduação na Unicamp, em que o objetivo era de criar um novo conveito sonoro/musical para a cena, exercitando desde a concepção e poética até o trabalho de produção e pós-produção musical.</description>
     </item>
     
     <item>

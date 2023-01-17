@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <title>{{ .Title }}</title>
+    <title>Bikes</title>
     <meta charset="utf-8">
     <meta name="author" content="Nicholas Sonvezzo">
     <meta name="description" content="Custom Dreams - website example">
-    <meta name="keywords" content="{{ .Keywords }}">
+    <meta name="keywords" content="[]">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {{ hugo.Generator }}
+    <meta name="generator" content="Hugo 0.109.0">
     <link rel="icon" href="/favicon.svg">
     <link rel="mask-icon" href="/favicon.svg">
-    <!--Fonts-->
-    <!--Stylesheet-->
+    
+    
     <link rel="stylesheet" href="/css/websites/customDreams/customDreams.css">
     </head>
 
@@ -22,18 +22,34 @@
                     <img src="/css/websites/customDreams/harley-logo-vector-3.jpg" alt="">
                 </figure>
                 <span id="title">
-                    <a href="{{ ref . "motorcycles"}}">Custom Dreams</a>
+                    <a href="https://som-vezzo.me/portfolio/websites/motorcycles/">Custom Dreams</a>
                 </span>
                 <nav id="main-nav">
                     <ul>
-                        <li><a href="{{ ref . "bikes" }}">Shop</a></li>
-                        <li><a href="{{ ref . "blog" }}">Blog</a></li>
-                        <li><a href="{{ ref . "garage" }}">Garage</a></li>
+                        <li><a href="https://som-vezzo.me/portfolio/websites/motorcycles/bikes/">Shop</a></li>
+                        <li><a href="https://som-vezzo.me/portfolio/websites/motorcycles/blog/">Blog</a></li>
+                        <li><a href="https://som-vezzo.me/portfolio/websites/motorcycles/garage/">Garage</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
-        {{ block "main" . }}{{ end }}
+        
+<main class="row">
+    <div class="col-12">
+        <h1 id="shop">Shop</h1>
+<p>WIP</p>
+<ul>
+<li>Boulevard</li>
+<li>Dragstar</li>
+<li>Fat Boy</li>
+<li>Intruder</li>
+<li>Midnight</li>
+<li>Sportster</li>
+</ul>
+
+    </div>
+</main>
+
         <footer class="row">
             <div class="row">
                 <hr>

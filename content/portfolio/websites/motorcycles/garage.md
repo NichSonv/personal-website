@@ -2,10 +2,10 @@
 title: "Motorcycles.garage"
 listag: ""
 date: 2023-01-12T19:04:13-03:00
-draft: true
+draft: false
 keywords: ""
 weight: 0
 hidden: false
-type: "websites"
+type: "websites/customDreams"
 ---
-A garagem
+This is our garage

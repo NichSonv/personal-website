@@ -5,9 +5,10 @@ html {
 }
 
 body {
-  margin: 0;
-  background-color: #360000;
+  margin: 1rem 0;
+  background-image: linear-gradient(to bottom left, #222, black);
   color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 * {
@@ -41,7 +42,7 @@ header {
 }
 #title a {
   text-decoration: none;
-  color: #eb0202;
+  color: white;
 }
 @media only screen and (min-width: 1000px) {
   #title {
@@ -66,9 +67,12 @@ header {
   display: inline-block;
   margin: 0 1rem;
 }
-#main-nav ul li a, #main-nav ul li a:hover {
+#main-nav ul li a {
   color: #eb0202;
   text-decoration: none;
+}
+#main-nav ul li a:hover {
+  text-decoration: underline;
 }
 @media only screen and (min-width: 1000px) {
   #main-nav ul {
@@ -86,7 +90,6 @@ figure {
 }
 figure img {
   width: 100%;
-  border: 1px solid #eb0202;
 }
 
 .cover-img {
@@ -106,6 +109,15 @@ figure img {
 }
 
 /* Main content */
+h1, h2, h3, h4 {
+  margin: 1rem 0.5rem;
+}
+@media only screen and (min-width: 1000px) {
+  h1, h2, h3, h4 {
+    text-align: center;
+  }
+}
+
 p, ul {
   font-size: 1.2em;
   text-align: center;
@@ -115,19 +127,28 @@ ul {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 0.5rem auto;
+  margin: 0.5rem 0.1rem;
   text-align: left;
+}
+@media only screen and (min-width: 1000px) {
+  ul {
+    margin: 0.5rem auto;
+  }
 }
 
 a {
   color: #eb0202;
 }
 
-@media only screen and (min-width: 1000px) {
+.sublinks ul {
+  margin: 1rem auto;
+}
+@media only screen and (min-width: 1200px) {
   .sublinks {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    margin: 1rem 0;
   }
 }
 
@@ -139,6 +160,9 @@ footer h5 {
   font-size: 1.2em;
   text-align: center;
   margin: 1rem auto;
+}
+footer ul {
+  margin: auto;
 }
 footer .credit p {
   color: gray;

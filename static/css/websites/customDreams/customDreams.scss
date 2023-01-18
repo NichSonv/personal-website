@@ -9,9 +9,10 @@ html {
     padding: 0;
 }
 body {
-    margin: 0;
-    background-color: $deepRed;
+    margin: 1rem 0;
+    background-image: linear-gradient(to bottom left, #222, black);
     color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 * {
     box-sizing: border-box;
@@ -39,7 +40,7 @@ header {
     width: fit-content;
     a {
         text-decoration: none;
-        color: $brightRed;
+        color: white;
     }
     @media only screen and (min-width: 1000px) {
         position: absolute;
@@ -60,9 +61,12 @@ header {
     li {
         display: inline-block;
         margin: 0 1rem;
-        a, a:hover {
+        a {
             color: $brightRed;
             text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     }
     @media only screen and (min-width: 1000px) {
@@ -78,7 +82,6 @@ figure {
     max-width: 500px;
     img {
         width: 100%;
-        border: 1px solid $brightRed;
     }
 }
 .cover-img {
@@ -95,23 +98,36 @@ figure {
 }
 
 /* Main content */
+h1, h2, h3, h4 {
+    margin: 1rem 0.5rem;
+    @media only screen and (min-width: 1000px) {
+        text-align: center;
+    }
+}
 p, ul {
     font-size: 1.2em;
     text-align: center;
 }
 ul {
     width: fit-content;
-    margin: 0.5rem auto;
+    margin: 0.5rem 0.1rem;
     text-align: left;
+    @media only screen and (min-width: 1000px) {
+        margin: 0.5rem auto;
+    }
 }
 a {
     color: $brightRed;
 }
 .sublinks {
-    @media only screen and (min-width: 1000px) {
+    ul {
+        margin: 1rem auto;
+    }
+    @media only screen and (min-width: 1200px) {
         position: -webkit-sticky;
         position: sticky;
         top: 0;
+        margin: 1rem 0;
     }
 }
 
@@ -124,6 +140,9 @@ footer {
         font-size: 1.2em;
         text-align: center;
         margin: 1rem auto;
+    }
+    ul {
+        margin: auto;
     }
     .credit {
         p {

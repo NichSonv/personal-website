@@ -10,35 +10,53 @@ type: "websites/customDreams"
 ---
 # Our selection
 
-{{< figure src="bikes/Dragstar 2004.JPG" link="bikes/Dragstar 2004.JPG" caption="Yamaha Dragstar" >}}
+## Dragstar
+
+{{< figure src="bikes/Dragstar 2004.JPG" link="bikes/Dragstar 2004.JPG" >}}
 
 - Price: U$4500.00
 - Model: 2004
+- Yamaha
 
-{{< figure src="bikes/Midnight 2008.webp" link="bikes/Midnight 2008.webp" caption="Yamaha Midnight" >}}
+## Midnight
+
+{{< figure src="bikes/Midnight 2008.webp" link="bikes/Midnight 2008.webp" >}}
 
 - Price: U$6800.00
 - Model: 2008
+- Yamaha
 
-{{< figure src="bikes/Boulevard 2019.jpg" link="bikes/Boulevard 2019.jpg" caption="Suzuki Boulevard 800" >}}
+## Boulevard 800
+
+{{< figure src="bikes/Boulevard 2019.jpg" link="bikes/Boulevard 2019.jpg" >}}
 
 - Price: U$5000.00
-- Model: 2009
+- Model: 2019
+- Suzuki
 
-{{< figure src="bikes/Intruder 2011.jpg" link="bikes/Intruder 2011.jpg" caption="Suzuki Intruder 800" >}}
+## Intruder 800
+
+{{< figure src="bikes/Intruder 2011.jpg" link="bikes/Intruder 2011.jpg" >}}
 
 - Price: U$4200.00
 - Model: 2002
+- Suzuki
 
-{{< figure src="bikes/Sportster 2009.jpg" link="bikes/Sportster 2009.jpg" caption="HarleyDavidson Sportster" >}}
+## Sportster
+
+{{< figure src="bikes/Sportster 2009.jpg" link="bikes/Sportster 2009.jpg" >}}
 
 - Price: U$8000.00
 - Model: 2020
+- Harley Davidson
 
-{{< figure src="bikes/Fat Boy 2018.jpg" link="bikes/Fat Boy 2018.jpg" caption="HarleyDavidson Fat Boy" >}}
+# Fat Boy
+
+{{< figure src="bikes/Fat Boy 2018.jpg" link="bikes/Fat Boy 2018.jpg" >}}
 
 - Price: U$13000.00
 - Model: 2018
+- Harley Davidson
 
 [See all]({{< ref bikes >}})
 

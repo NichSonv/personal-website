@@ -18,14 +18,17 @@
     <body>
         <header class="row">
             <div class="col-12">
-                <figure id="logo">
-                    <img src="/css/websites/customDreams/harley-logo-vector-3.jpg" alt="">
-                </figure>
-                <span id="title">
-                    <a href="{{ ref . "motorcycles"}}">Custom Dreams</a>
-                </span>
+                <a href="{{ ref . "motorcycles" }}">
+                    <figure id="logo">
+                        <img src="/css/websites/customDreams/logo.png" alt="">
+                    </figure>
+                </a>
+                <!-- <span id="title"> -->
+                    <!-- <a href="{{ ref . "motorcycles"}}">Custom Dreams</a> -->
+                <!-- </span> -->
                 <nav id="main-nav">
                     <ul>
+                        <li><a href="{{ ref . "motorcycles" }}">Home</a></li>
                         <li><a href="{{ ref . "bikes" }}">Shop</a></li>
                         <li><a href="{{ ref . "blog" }}">Blog</a></li>
                         <li><a href="{{ ref . "garage" }}">Garage</a></li>

@@ -1,6 +1,6 @@
 ---
-title: "Osc Music Player"
-listag: "-C-M-I-WIP"
+title: "OscMusicPlayer.scd - WIP"
+desc: "Interface para performance de música 'osciloscópica'"
 date: 2022-12-24T18:58:55-03:00
 draft: false
 keywords: ""

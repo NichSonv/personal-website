@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Programas on SomVezzo</title>
+    <title>Projetos menores on SomVezzo</title>
     <link>https://som-vezzo.me/portfolio/programs/</link>
-    <description>Recent content in Programas on SomVezzo</description>
+    <description>Recent content in Projetos menores on SomVezzo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
     <lastBuildDate>Wed, 21 Dec 2022 14:08:54 -0300</lastBuildDate><atom:link href="https://som-vezzo.me/portfolio/programs/index.xml" rel="self" type="application/rss+xml" />
@@ -17,7 +17,7 @@
     </item>
     
     <item>
-      <title>Osc Music Player</title>
+      <title>OscMusicPlayer.scd - WIP</title>
       <link>https://som-vezzo.me/portfolio/programs/osc-music-player/</link>
       <pubDate>Sat, 24 Dec 2022 18:58:55 -0300</pubDate>
       
@@ -28,7 +28,7 @@ SynthDef(\xyzSin, { var sig, env, hz; env = Env.asr(0.1, 1, 0.2).kr(2, \gate.kr(
     </item>
     
     <item>
-      <title>Gerador de nºs primos</title>
+      <title>Prime-number-gen.sc</title>
       <link>https://som-vezzo.me/portfolio/programs/prime-number-gen/</link>
       <pubDate>Fri, 23 Dec 2022 09:41:36 -0300</pubDate>
       
@@ -38,7 +38,7 @@ E essa aqui é a versão anterior, antes de eu descobrir que existia um método 
     </item>
     
     <item>
-      <title>Espacializador circular</title>
+      <title>OrbitAz.sc</title>
       <link>https://som-vezzo.me/portfolio/programs/orbitaz/</link>
       <pubDate>Fri, 23 Dec 2022 09:20:56 -0300</pubDate>
       
@@ -54,7 +54,7 @@ A extensão e sua documentação Pode-se observar no código que o efeito é res
       <pubDate>Sat, 17 Dec 2022 22:49:17 -0300</pubDate>
       
       <guid>https://som-vezzo.me/portfolio/programs/drone/</guid>
-      <description>Drone.scd - Instrumento virtual O instrumento virtual \drone se trata de um sintetizador que programei em SuperCollider (sclang), e que se aproveita do efeito acústico das formantes, ou frequências de ressonância - simplificadamente, a ênfase de algum harmônico dentro de um som complexo.
+      <description>Drone.scd - Instrumento virtual e interface O instrumento virtual \drone se trata de um sintetizador que programei em SuperCollider (sclang), e que se aproveita do efeito acústico das formantes, ou frequências de ressonância - simplificadamente, a ênfase de algum harmônico dentro de um som complexo.
 A principal classe em sua construção, e que é a base da sua sonoridade, é a Formant.ar, que como o nome sugere, cria esse som complexo onde é possível definir a formante, e também o tamanho da banda de ressonância.</description>
     </item>
     

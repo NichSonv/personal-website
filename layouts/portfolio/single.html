@@ -3,12 +3,11 @@
         {{ .Content }}
     </main>
     <nav class="col-3">
-        {{ partial "port-nav-leg.html" . }}
-        <ul id="portfolio-list">
+        <dl class="portfolio-list">
             {{ range .Parent.Pages }}
-                <li><a href="{{ .Permalink }}">{{ .Title }} {{ .Page.Params.listag }}</a></li>
+                <dt><a href="{{ .Permalink }}">{{ .Title }}</a></dt>
+                <dd>{{ .Params.desc }}</dd>
             {{ end }}
-            <li><a href="{{ .Parent.Permalink }}">Voltar para {{ .Parent.Title }}</a></li>
-        </ul>
+        </dl>
     </nav>
 {{ end }}

@@ -1,6 +1,6 @@
 ---
 title: "Âmagus"
-listag: "-M-C-I"
+desc: "Recital de formatura"
 date: 2022-12-12T14:30:22-03:00
 draft: false
 keywords: "-, nicholas, sonvezzo, somvezzo, som-vezzo, -"

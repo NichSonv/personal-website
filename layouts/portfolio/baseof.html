@@ -11,6 +11,13 @@
         {{ partial "tagBody.html" . }}
         {{ partial "nav" . }}
         {{ partial "header.html" . }}
+        <nav class="row">
+            <div class="col-12">
+                <ul>
+                    <li><a href="{{ .Parent.Permalink }}">Voltar para {{ .Parent.Title }}</a></li>
+                </ul>
+            </div>
+        </nav>
         <div class="row">
             {{ block "main" . }}{{ end }}
         </div>

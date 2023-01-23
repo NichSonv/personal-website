@@ -1,6 +1,6 @@
 ---
-title: "Espacializador circular"
-listag: "-C"
+title: "OrbitAz.sc"
+desc: "Espacializador circular - ext. SC"
 date: 2022-12-23T09:20:56-03:00
 draft: false
 keywords: ""

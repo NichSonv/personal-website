@@ -1,6 +1,6 @@
 ---
 title: "Golang simple form"
-listag: ""
+desc: "Simples captador de lead"
 date: 2023-01-19T14:56:15-03:00
 draft: false
 keywords: ""

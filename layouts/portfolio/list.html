@@ -1,13 +1,11 @@
 {{ define "main" }}
-    <main class="col-9">
+    <main class="col-12">
         {{ .Content }}
-        <ul id="portfolio-list">
+        <dl class="portfolio-list">
             {{ range .Pages }}
-                <li><a href="{{ .Permalink }}">{{ .Title }} {{ .Page.Params.listag }}</a></li>
+                <dt><a href="{{ .Permalink }}">{{ .Title }}</a></dt>
+                <dd>{{ .Params.desc }}</dd>
             {{ end }}
-        </ul>
+        </dl>
     </main>
-    <nav class="col-3">
-        {{ partial "port-nav-leg.html" . }}
-    </nav>
 {{ end }}

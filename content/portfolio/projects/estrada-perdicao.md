@@ -1,6 +1,6 @@
 ---
 title: "Estrada da Perdição"
-listag: "-M-C"
+desc: "Trilha sonora em sclang"
 date: 2022-12-15T13:33:02-03:00
 draft: false
 keywords: "-, nicholas, sonvezzo, somvezzo, som-vezzo, -"

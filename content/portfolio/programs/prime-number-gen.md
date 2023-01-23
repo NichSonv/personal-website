@@ -1,6 +1,6 @@
 ---
-title: "Gerador de nºs primos"
-listag: "-C"
+title: "Prime-number-gen.sc"
+desc: "Algoritmo gerador de arrays de números primos - ext. SC"
 date: 2022-12-23T09:41:36-03:00
 draft: false
 keywords: ""

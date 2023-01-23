@@ -1,6 +1,6 @@
 ---
-title: "Custom Dreams - motorcycle shop"
-listag: ""
+title: "Custom Dreams"
+desc: "Motorcycle shop"
 date: 2023-01-06T15:19:16-03:00
 draft: false
 keywords: "custom, motorcycle, bikes, dreams"

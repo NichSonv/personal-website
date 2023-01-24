@@ -74,12 +74,10 @@ header {
 #main-nav ul li a:hover {
   text-decoration: underline;
 }
-@media only screen and (min-width: 1000px) {
-  #main-nav ul {
-    margin: 0.1rem auto 0.1rem 300px;
-    font-size: 2em;
-    text-align: left;
-  }
+
+.web-back {
+  position: relative;
+  top: 0.8rem;
 }
 
 figure {
@@ -108,6 +106,22 @@ figure img {
   }
 }
 
+@media only screen and (min-width: 1000px) {
+  #main-nav ul {
+    margin: 0.1rem auto 0.1rem 300px;
+    font-size: 2em;
+    text-align: left;
+  }
+  .web-back {
+    font-size: 0.6em;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .cd-top-correction {
+    margin-top: 18vh;
+  }
+}
 /* Main content */
 h1, h2, h3, h4 {
   margin: 1rem 0.5rem;

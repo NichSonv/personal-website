@@ -182,11 +182,11 @@ hr {
 .port-nav-hr {
   border: 1px dotted white;
   width: 80%;
-  margin: 1rem auto 0 auto;
+  margin: 2rem auto 0 auto;
 }
-@media only screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .port-nav-hr {
-    display: hidden;
+    display: none;
   }
 }
 

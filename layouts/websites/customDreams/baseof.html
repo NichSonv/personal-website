@@ -23,15 +23,19 @@
                         <img src="/css/websites/customDreams/logo.png" alt="">
                     </figure>
                 </a>
-                <!-- <span id="title"> -->
-                    <!-- <a href="{{ ref . "motorcycles"}}">Custom Dreams</a> -->
-                <!-- </span> -->
+                <span id="title">
+                    <a href="{{ ref . "motorcycles"}}">Custom Dreams</a>
+                </span>
                 <nav id="main-nav">
                     <ul>
+                        <!-- {{ range .Pages }} -->
+                            <!-- <li><a href="{{ .Permalink }}">{{ .Title }}</a></li> -->
+                        <!-- {{ end }} -->
                         <li><a href="{{ ref . "motorcycles" }}">Home</a></li>
-                        <li><a href="{{ ref . "bikes" }}">Shop</a></li>
+                        <li><a href="{{ ref . "bikes" }}">Bikes</a></li>
                         <li><a href="{{ ref . "blog" }}">Blog</a></li>
                         <li><a href="{{ ref . "garage" }}">Garage</a></li>
+                        <li class="web-back"><a href="{{ ref . "websites" }}">Back to Websites</a></li>
                     </ul>
                 </nav>
             </div>
@@ -41,14 +45,14 @@
             <div class="row">
                 <hr>
                 <div class="col-6 left">
-                    <h5>Quem somos</h5>
+                    <h5>About us</h5>
                     <ul>
                         <li>Custom Dreams - CNPJ 12.345.678/0001-99</li>
                         <li>Rua da Picaíba, 99, Praça do motoqueiro<br>Jordanésia, SP, Brazil</li>
                     </ul>
                 </div>
                 <div class="col-6 right">
-                    <h5>Contato</h5>
+                    <h5>Contact</h5>
                     <ul>
                         <li><a href="#">(19) 1234-1234</a></li>
                         <li><a href="#">custom@dreams.bike</a></li>
@@ -58,8 +62,7 @@
             <div class="row credit">
                 <p class="col-12">
                     Site designed by Nicholas Sonvezzo<br>
-                    All information and data in here is fictional<br>
-                    <a href="..">Back to "Websites"</a>
+                    All information and data in here is fictional
                 </p>
             </div>
         </footer>

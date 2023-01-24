@@ -8,9 +8,9 @@ weight: 0
 hidden: false
 type: "websites/customDreams"
 ---
-# Shop
+# {{< param title >}} {.cd-top-correction}
 
-WIP
+This is our selection
 
 - Boulevard
 - Dragstar

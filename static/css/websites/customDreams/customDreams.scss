@@ -69,11 +69,10 @@ header {
             text-decoration: underline;
         }
     }
-    @media only screen and (min-width: 1000px) {
-        margin: 0.1rem auto 0.1rem 300px;
-        font-size: 2em;
-        text-align: left;
-    }
+}
+.web-back {
+    position: relative;
+    top: 0.8rem;
 }
 figure {
     width: 100%;
@@ -94,6 +93,22 @@ figure {
         width: 300px;
         margin: 0;
         padding: 0;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    #main-nav ul {
+        margin: 0.1rem auto 0.1rem 300px;
+        font-size: 2em;
+        text-align: left;
+    }
+    .web-back {
+        font-size: 0.6em;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    .cd-top-correction {
+        margin-top: 18vh;
     }
 }
 

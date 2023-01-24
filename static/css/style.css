@@ -179,6 +179,17 @@ hr {
   border-radius: var(--border-roundness-15);
 }
 
+.port-nav-hr {
+  border: 1px dotted white;
+  width: 80%;
+  margin: 1rem auto 0 auto;
+}
+@media only screen and (min-width: 1200px) {
+  .port-nav-hr {
+    display: hidden;
+  }
+}
+
 p {
   overflow: auto;
   margin: 0.7rem 0.1rem;
@@ -355,11 +366,13 @@ code {
   max-width: 850px;
   overflow: auto;
   margin: auto;
+  font-size: 1em;
 }
 
 .gist .blob-wrapper.data {
   max-height: 300px;
   overflow: auto;
+  font-size: 1em;
 }
 
 .centered {

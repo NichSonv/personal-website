@@ -25,7 +25,7 @@ func main() {
 		os.Exit(0)
 	}
 }
-``` 
+```
 
 Esse é um programa muito simples que escrevi em Golang, como um exercício prático de aprendizado da linguagem. Trata-se de um programa básico de captação de lead, que interage com o usuário em busca das informações necessárias.  
 No link abaixo você pode baixar o programa e testá-lo em sua própria máquina:

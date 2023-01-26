@@ -7,5 +7,8 @@
                 <dd>{{ .Params.desc }}</dd>
             {{ end }}
         </dl>
+        {{ if (eq .Page.Title "Portfolio") }}
+            <a href="https://github.com/NichSonv">Source codes no GitHub</a>
+        {{ end }}
     </main>
 {{ end }}

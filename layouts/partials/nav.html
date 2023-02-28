@@ -6,6 +6,7 @@
         <a href="{{ .Site.BaseURL }}" class="homeicon"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px"><path stroke-miterlimit="10" stroke-width="2" d="M19,11v9h-5v-6h-4v6H5v-9H3.606L12,3.445L20.394,11H19z"/></svg></a>
         <div class="mainlinks-content">
             <ul>
+                <li><a href="{{ site.BaseURL }}">Home</a></li>
                 {{ range .Site.Home.Pages }}
                     {{ if not (eq .Page.Params.hidden true) }}
                     <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>

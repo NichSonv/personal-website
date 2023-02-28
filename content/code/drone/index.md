@@ -1,6 +1,6 @@
 ---
-title: "Drone.scd"
-desc: "Instrumento virtual e interface"
+title: "Drone"
+desc: "Sintetizador"
 date: 2022-12-17T22:49:17-03:00
 draft: false
 keywords: "-, nicholas, sonvezzo, somvezzo, som-vezzo, -"
@@ -11,19 +11,23 @@ hidden: false
 
 {{< gist NichSonv "1d0501e682b0f6be6268408d43cf48da" "drone.scd" >}}
 
-O instrumento virtual `\drone` se trata de um sintetizador que programei em SuperCollider (_sclang_), e que se aproveita do efeito acústico das _formantes_, ou frequências de ressonância - simplificadamente, a ênfase de algum harmônico dentro de um som complexo.  
-A principal classe em sua construção, e que é a base da sua sonoridade, é a `Formant.ar`, que como o nome sugere, cria esse som complexo onde é possível definir a _formante_, e também o tamanho da banda de ressonância. O instrumento utiliza esse oscilador em conjunto com um reverb e controle de espacialização, e aí está criada a sua sonoridade característica.
+`\drone` é um sintetizador que programei em SuperCollider (_sclang_); é essencialmente um som complexo com controle de filtragem de harmônicos.  
 
 ```sclang
-SynthDef(\drone, {
-    | sig env | // argumentos
-    env = Env.asr.kr(2, \gate.kr(1)); // envelope para a duração do som (asr = Attack Sustain Release)
-    sig = Formant.ar(\fundamental.kr(200), \formante.kr(800), \banda.kr(1000), env); // oscilador base do instrumento
-    sig = Pan2.ar(sig, \pan.kr(0)); // espacializador
-    sig = FreeVerb.ar(sig, \mix.kr, \room.kr, \damp.kr); // reverb (normalmente adicionado de forma externa ao instrumento)
-    Out.ar(0, sig) // canal de saída do som para a placa de áudio
-}).add;
+Formant.ar(fundFreq, formant, bandwidth, mul)
 ```
+
+A classe acima é a que instancia o oscilador principal do synth, que gera o seu som característico.
+
+- `Formant` - a classe
+- `.ar` - o método para instanciar um oscilador em taxa de áudio
+- `fundFreq` - parâmetro que controla a frequência base do oscilador
+- `formant` - parâmetro que controla a frequência do harmônico
+- `bandwidth` - parâmetro que controla a abertura de banda do filtro
+- `mul` - parâmetro que multiplica a amplitude do sinal
+
+No todo, o sintetizador é bem simples, a `Formant` cria um sinal em taxa de áudio, o `Env` cria o envelope que vai determinar os níveis desse sinal so longo do tempo, o `PanAz` espacializa o sinal, o `Splay` reduz o espaço sonoro para um ambiente stereo (quando necessário, pois o instrumento foi pensado para atuar, principalmente, em instalações sonoras de 3+ caixas de som), `LeakDC` re-centraliza as amplitudes do sinal entre -1 e 1, para caso ele acabe pendendo demais para um dos dois lados, e `Out` envia o sinal para fora (seja a caixa de som ou algum bus interno).  
+Depois disso tudo, o sinal ainda passa por um reverb, que é fundamental também para que o som característico do synth surja.
 
 O instrumento normalmente é utilizado com a ajuda de uma interface digital, que também criei especificamente para ele, através do programa _TouchOSC_, abaixo a imagem de uma das versões dessa interface, desenhada para uso em um iPad.
 

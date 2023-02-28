@@ -1,0 +1,14 @@
+{{ define "main" }}
+    <main class="col-9">
+        {{ .Content }}
+    </main>
+    <hr class="port-nav-hr">
+    <nav class="col-3">
+        <dl class="portfolio-list">
+            {{ range .Parent.Pages }}
+                <dt><a href="{{ .Permalink }}">{{ .Title }}</a></dt>
+                <dd>{{ .Params.desc }}</dd>
+            {{ end }}
+        </dl>
+    </nav>
+{{ end }}

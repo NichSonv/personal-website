@@ -1,0 +1,14 @@
+{{ define "main" }}
+    <main class="col-12">
+        {{ .Content }}
+        <dl class="portfolio-list">
+            {{ range .Pages }}
+                <dt><a href="{{ .Permalink }}">{{ .Title }}</a></dt>
+                <dd>{{ .Params.desc }}</dd>
+            {{ end }}
+        </dl>
+        {{ if (eq .Page.Title "Portfolio") }}
+            <a href="https://github.com/NichSonv">Source codes no GitHub</a>
+        {{ end }}
+    </main>
+{{ end }}

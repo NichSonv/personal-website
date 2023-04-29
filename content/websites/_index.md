@@ -6,6 +6,7 @@ draft: false
 keywords: "-, nicholas, sonvezzo, somvezzo, som-vezzo, -"
 weight: 4
 hidden: false
+type: portfolio
 ---
 # {{< param title >}}
 

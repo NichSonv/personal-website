@@ -6,6 +6,7 @@ draft: false
 keywords: "-, nicholas, sonvezzo, somvezzo, som-vezzo, -"
 weight: 0
 hidden: false
+type: portfolio
 ---
 # Estrada da perdição - trilha sonora alternativa
 

@@ -6,12 +6,18 @@ draft: false
 keywords: "-, nicholas, sonvezzo, somvezzo, som-vezzo, -"
 weight: 0
 hidden: false
+type: portfolio
 ---
 # {{< param title >}} - {{< param desc >}}
 
 {{< gist NichSonv "1d0501e682b0f6be6268408d43cf48da" "drone.scd" >}}
 
-`\drone` é um sintetizador que programei em SuperCollider (_sclang_); é essencialmente um som complexo com controle de filtragem de harmônicos.  
+`\drone` é um sintetizador que programei em SuperCollider (_sclang_). Sua sonoridade remete à um metal sendo friccionado com um arco.
+
+_Exemplo da sonoridade do sintetizador..._
+{{< soundcloud src="1036050955" href="atmosphere" title="Atmosphere" >}}
+
+---
 
 ```sclang
 Formant.ar(fundFreq, formant, bandwidth, mul)
@@ -38,5 +44,3 @@ Talvez possa parecer complicado, mas isso é só pelo fato dessa interface, em p
 A comunicação do aparelho ao SuperCollider foi em OSC nas primeiras versões, dentro de uma rede wifi fechada apenas para os aparelhos envolvidos na performance, e mais recentemente em MIDI, pela vantagem da comunicação poder ser feita através de um cabo USB, com isso diminuindo a possibilidade de _lag_.
 
 Abaixo um exemplo do instrumento em prática, em uma versão da obra [Atmosphere]({{< ref "atmosphere.md" >}}) (ouça com fones de ouvido para uma melhor experiência):
-
-{{< soundcloud src="1036050955" href="atmosphere" title="Atmosphere" >}}

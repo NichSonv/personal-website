@@ -1,0 +1,10 @@
+<hr class="port-nav-hr">
+<h4>Outros projetos</h4>
+<nav class="col-3">
+    <dl class="portfolio-list">
+        {{ range .Parent.Pages }}
+            <dt><a href="{{ .Permalink }}">{{ .Title }}</a></dt>
+            <dd>{{ .Params.desc }}</dd>
+        {{ end }}
+    </dl>
+</nav>

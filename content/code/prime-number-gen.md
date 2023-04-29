@@ -6,6 +6,7 @@ draft: false
 keywords: ""
 weight: 0
 hidden: false
+type: portfolio
 ---
 # Gerador de números primos
 

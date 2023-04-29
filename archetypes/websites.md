@@ -5,5 +5,5 @@ draft: true
 keywords: ""
 weight: 0
 hidden: false
-type: "websites/{{ .Name }}"
+type: portfolio/websites/{{ .Name }}
 ---

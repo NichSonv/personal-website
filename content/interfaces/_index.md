@@ -5,4 +5,5 @@ draft: true
 keywords: ""
 weight: 3
 hidden: false
+type: portfolio
 ---

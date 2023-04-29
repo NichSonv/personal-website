@@ -6,7 +6,7 @@ draft: false
 keywords: "custom, motorcycle, bikes, dreams"
 weight: 0
 hidden: false
-type: "websites/customDreams"
+type: "portfolio/websites/customDreams"
 ---
 # Our selection
 

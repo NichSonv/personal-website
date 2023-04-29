@@ -6,6 +6,7 @@ draft: false
 keywords: "-, nicholas, sonvezzo, somvezzo, som-vezzo, -"
 weight: 0
 hidden: false
+type: portfolio
 ---
 # Eye of the Storm - WIP
 

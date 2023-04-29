@@ -6,6 +6,7 @@ draft: true
 keywords: ""
 weight: 0
 hidden: false
+type: portfolio
 ---
 # {{< param title >}}
 

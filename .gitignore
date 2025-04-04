@@ -1,8 +1,37 @@
+# Generated files by hugo
+public/*
+themes/*
+resources/*
 
-public/.DS_Store
+# Executable may be added to repository
+hugo.exe
+hugo.darwin
+hugo.linux
+
+# Temporary lock file while building
+.hugo_build.lock
+
+# Dependency directories
+node_modules
+
+# OS - Mac
 .DS_Store
+
+# .idea folder
+.idea
+
+# nova and vscode folders
+.nova
+.vscode
+
+# Logs
+logs
+*.log
+
+# Temporary files
+.cache
+.tmp
+.cache
+.sass-cache
 .DS_Store
-content/.DS_Store
-content/.DS_Store
-public/.DS_Store
 .DS_Store

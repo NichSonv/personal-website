@@ -23,7 +23,7 @@ buttonTXT: ""
 
 Assista o vídeo abaixo para...
 
-{{< video src="{{< param videoURL >}}" title="{{< param videoTXT>}}" >}}
+{{< video src="{{< param videoURL >}}" title="{{< param videoTXT >}}" >}}
 
 <!--CTA-->
 

@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#
+#
+
+destination="$(basename "${PWD}")"
+# Push the content of public to server
+rsync -avz --size-only --delete-excluded --progress \
+      -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i ~/.ssh/id_rsa-hostgator" \
+      public/ "v2labs91@v2-labs.systems:/home1/v2labs91/extra-domains/${destination}"

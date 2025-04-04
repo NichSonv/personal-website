@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+#
+#
+
+# Build the whole site
+hugo --cleanDestinationDir
+
+# Update the _htaccess before push it up
+mv -v public/{_,.}htaccess
+
+# Setup the 
+find public \( -name '*.html' -o -name '*.css' \) \
+     -exec prettier -w '{}' ';'
+

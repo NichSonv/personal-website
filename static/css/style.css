@@ -109,7 +109,6 @@ header svg {
 
 .mainlinks div {
   display: none;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   background-color: rgba(var(--superDark-deep-purple), 0.93);
@@ -128,7 +127,6 @@ header svg {
 .mainlinks ul {
   list-style: none;
   margin: 0 auto;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 0;
@@ -193,7 +191,6 @@ hr {
 p {
   overflow: auto;
   margin: 0.7rem 0.1rem;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   max-width: 1000px;
@@ -223,7 +220,6 @@ a {
 
 ul, ol, dl {
   text-align: left;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: 1rem auto;
@@ -263,7 +259,6 @@ code {
   padding: 0.2rem;
   padding-right: 0.6rem;
   color: rgba(var(--light-gray), 1);
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   max-width: 90%;
@@ -298,10 +293,8 @@ code {
   border-radius: var(--border-roundness-5);
   border: 3px outset;
   width: 100%;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  min-height: -webkit-fit-content;
   min-height: -moz-fit-content;
   min-height: fit-content;
   margin: 0.4rem auto;
@@ -376,7 +369,6 @@ code {
 }
 
 .centered {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: auto;
@@ -446,7 +438,6 @@ footer hr {
   opacity: 50%;
   font-size: 0.9em;
   margin: auto;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -552,7 +543,6 @@ footer hr {
     font-size: 0.8em;
   }
   #homeSongs + ul {
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
   }

@@ -36,7 +36,6 @@ header {
   font-size: 12vw;
   margin: 1rem auto;
   font-weight: bold;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -138,7 +137,6 @@ p, ul {
 }
 
 ul {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: 0.5rem 0.1rem;
@@ -159,7 +157,6 @@ a {
 }
 @media only screen and (min-width: 1200px) {
   .sublinks {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     margin: 1rem 0;
